@@ -1,0 +1,98 @@
+<section class="contact_us-section" id="contact_us">
+  <div class="container container-contact_us">
+    <h2 class="section-contact_us-name">Contact us</h2>
+    <div class="form-and-img">
+      <div class="block-contact_us">
+        <div class="box-form">
+          <p class="text-contact_us">
+            Please use the form below to contact us. Enter your name, email,
+            phone, and message and we'll get back to you shortly.
+          </p>
+
+          <form class="form-contact_us" name="form-contact_us">
+            <div class="contact_us-form-input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                class="contact_us-form-input"
+                id="user-name"
+                pattern="[a-zA-Za-яА-ЯіІїЇєЄґҐґ']+"
+                title="Oleksii"
+                required
+                placeholder="Name"
+              />
+            </div>
+            <div class="contact_us-form-input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                class="contact_us-form-input"
+                id="user-email"
+                required
+                pattern="^\S+@\S+\.\S+$"
+                placeholder="Email"
+              />
+            </div>
+            <div class="contact_us-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                class="contact_us-form-input"
+                id="user-phone"
+                pattern="[\+]\d{3}[\-]\d{2}[\-]\d{3}[\-]\d{2}[\-]\d{2}"
+                minlength="13"
+                maxlength="17"
+                required
+                title="+380-99-111-11-11"
+                placeholder="+380"
+              />
+            </div>
+            <div class="contact_us-form-input-wrapper comment">
+              <textarea
+                class="review-form-massage"
+                name="user-comment"
+                id="user-comment"
+                required
+                placeholder="Comment"
+              ></textarea>
+            </div>
+            <button class="contact_us-form-submit-btn" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="contact_us-peacture">
+        <picture>
+          <source
+            srcset="
+              ./img/Contact/Cont-desk-1x.png 1x,
+              ./img/Contact/Cont-desk-2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./img/Contact/Cont-tab-1x.png 1x,
+              ./img/Contact/Cont-tab-2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./img/Contact/Cont-mob-1x.png 1x,
+              ./img/Contact/Cont-mob-2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="contact_us-img"
+            src="./img/Contact/Cont-mob-1x.png"
+            alt="watch"
+            width="335"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>

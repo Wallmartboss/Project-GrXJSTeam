@@ -1,0 +1,349 @@
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container.footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.footer-div {
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  padding: 40px 28px 28px 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-div {
+    padding: 40px 40px 28px 40px;
+  }
+}
+
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .slogan-container {
+    margin-bottom: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 86px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slogan-container {
+    margin-bottom: 142px;
+    flex-direction: row;
+    position: relative;
+  }
+}
+
+.footer-logo {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* .footer-logo:hover,
+.footer-logo:focus {
+  background-color: #fbfbfb;
+  color: var(--main);
+  border-radius: 2px;
+  outline: none;
+} */
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 20px;
+  }
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-list {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-social-link {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-link {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.footer-social-icon {
+  opacity: 0.8;
+  transition: opacity 250ms linear;
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  opacity: 1;
+}
+
+.slogan {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+@media screen and (max-width: 767px) {
+  .slogan {
+    max-width: 279px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slogan {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    width: 520px;
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slogan {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tel-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 16px;
+  width: 152px;
+  height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  background-color: #fbfbfb;
+  color: var(--main);
+  outline: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .tel-link {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tel-link {
+    font-size: 14px;
+    line-height: 1.28571;
+    width: 160px;
+    height: 48px;
+  }
+}
+
+.nav-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-address {
+    padding-bottom: 28px;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-nav-list {
+    max-width: 147px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav-list {
+    width: 400px;
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+}
+
+.footer-nav-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  background-color: #fbfbfb;
+  color: var(--main);
+  border-radius: 2px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav-link {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+}
+
+.nav-address-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-address-text:hover,
+.nav-address-text:focus {
+  background-color: #fbfbfb;
+  color: var(--main);
+  border-radius: 2px;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-address-text {
+    max-width: 83px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-address-text {
+    max-width: 162px;
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+}
+
+.contact-police {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-police {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+  }
+}
+
+.contact-text {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-text {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-text {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+}
+
+.police-list {
+  display: flex;
+  gap: 20px;
+}
+
+.police-link {
+  display: flex;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .police-link {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+}

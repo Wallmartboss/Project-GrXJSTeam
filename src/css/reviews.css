@@ -1,0 +1,142 @@
+.rev-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.reviews {
+    background-color: #fbfbfb;
+}
+
+.rev-title {
+    color: #0C0C0C;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+.rev {
+    display: flex;
+    justify-content: center;
+}
+
+.list-rev {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #F3F3F3;
+    border-radius: 30px;
+}
+
+.list-rev-t,
+.list-rev-d {
+    display: none;
+}
+
+.picture {
+    border-radius: 2px;
+    margin-bottom: 24px;
+    height: 56px;
+}
+
+.title-text {
+    color: #0C0C0C;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.text-rev {
+    text-align: center;
+    max-width: 283px;
+    color: rgba(12, 12, 12, 0.4);
+    font-size: 14px;
+    line-height: 1.29;
+
+}
+
+@media screen and (min-width: 768px) {
+    .rev-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .rev-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .rev {
+        gap: 16px;
+    }
+
+    .list-rev {
+        min-width: 344px;
+    }
+
+    .list-rev-t {
+        min-width: 344px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background: #F3F3F3;
+        border-radius: 30px;
+    }
+
+    .title-text {
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    .text-rev {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .rev-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .rev {
+        gap: 20px;
+    }
+
+    .list-rev {
+        min-width: 370px;
+    }
+
+    .list-rev-t {
+        min-width: 370px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background: #F3F3F3;
+        border-radius: 30px;
+    }
+
+    .list-rev-d {
+        min-width: 370px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background: #F3F3F3;
+        border-radius: 30px;
+    }
+
+    .text-rev {
+        max-width: 298px;
+
+    }
+}
