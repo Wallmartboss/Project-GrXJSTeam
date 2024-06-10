@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/impact.ttf');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
