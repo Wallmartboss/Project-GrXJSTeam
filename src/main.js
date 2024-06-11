@@ -17,3 +17,4 @@ toggleButton.addEventListener('click', () => {
         }
     });
 });
+  localStorage.setItem('theme', 'dark-mode');
