@@ -86,7 +86,7 @@ body {
   align-items: center;
 }
 
-/* @keyframes marqueeLine {
+@keyframes marqueeLine {
   from {
     transform: translateX(0);
   }
@@ -94,7 +94,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-} */
+}
 
 .color_dot {
   margin-left: 24px;
@@ -105,8 +105,11 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
-  /* fill: var(--black); */
-  fill: red;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(519%) hue-rotate(326deg)
+    brightness(119%) contrast(88%);
 }
 
 @media screen and (min-width: 768px) {
