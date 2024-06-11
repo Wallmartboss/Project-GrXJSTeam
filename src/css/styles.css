@@ -11,10 +11,6 @@
 @import url('./work_together.css');
 @import url('./footer.css');
 
-body {
-  min-width: 320px;
-}
-
 :root {
   --black: #292929;
   --accet-green: #00b068;
@@ -24,6 +20,20 @@ body {
   --font-family: 'Poppins', sans-serif;
   --second-family: 'Impact', sans-serif;
   --third-family: 'Montserrat', sans-serif;
+  --background-color: white;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  min-width: 320px;
+}
+
+body.dark-mode {
+  --background-color: black;
+  --text-color: white;
 }
 
 .visually-hidden {
@@ -39,17 +49,17 @@ body {
   overflow: hidden;
 }
 
-/* Ддя екрану від 320 px, і щоб від тягнувся від 320 до 375 */
+/* Ддя екрану від 320 px, і щоб від тягнувся від 320 до 360 */
 .container {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
 
-/* Для мобільного екрану від 375 px  */
-@media screen and (min-width: 375px) {
+/* Для мобільного екрану від 360 px  */
+@media screen and (min-width: 360px) {
   .container {
-    width: 375px;
+    width: 360px;
   }
 }
 
@@ -66,7 +76,5 @@ body {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 65px;
-    padding-right: 65px;
   }
 }
