@@ -112,13 +112,32 @@ body {
     brightness(119%) contrast(88%);
 }
 
+.toggler {
+  display: block;
+  cursor: pointer;
+  font-size: large;
+  color: var(--accet-green);
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
   .marquee {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
   }
+  .marquee.dark-mode {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+
   .marquee_tilt {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
+  .marquee_tilt.dark-mode {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
