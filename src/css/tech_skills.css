@@ -13,7 +13,7 @@ body {
   padding-top: 56px;
 }
 
-.marquee_tilt.light-mode {
+.marquee_tilt {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -43,7 +43,7 @@ body {
   position: relative;
   z-index: -1;
 }
-.marquee.light-mode {
+.marquee {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -86,7 +86,7 @@ body {
   align-items: center;
 }
 
-@keyframes marqueeLine {
+/* @keyframes marqueeLine {
   from {
     transform: translateX(0);
   }
@@ -94,7 +94,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-}
+} */
 
 .color_dot {
   margin-left: 24px;
@@ -105,7 +105,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
-  fill: var(--black);
+  /* fill: var(--black); */
   fill: red;
 }
 
