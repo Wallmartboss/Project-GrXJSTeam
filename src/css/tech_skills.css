@@ -13,7 +13,7 @@ body {
   padding-top: 56px;
 }
 
-.marquee_tilt {
+.marquee_tilt.light-mode {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -28,7 +28,7 @@ body {
   position: relative;
   z-index: -1;
 }
-.marquee_tilt .dark-mode {
+.marquee_tilt.dark-mode {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -43,7 +43,7 @@ body {
   position: relative;
   z-index: -1;
 }
-.marquee {
+.marquee.light-mode {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -55,7 +55,7 @@ body {
   color: var(--black);
   background-color: var(--light-accent);
 }
-.marquee .dark-mode {
+.marquee.dark-mode {
   overflow: hidden;
   font-family: var(--font-family);
   font-weight: 500;
@@ -101,10 +101,12 @@ body {
   margin-right: 24px;
 }
 
-.dot {
+.bw_dot {
   display: flex;
   align-items: center;
   justify-items: center;
+  fill: var(--black);
+  fill: red;
 }
 
 @media screen and (min-width: 768px) {
