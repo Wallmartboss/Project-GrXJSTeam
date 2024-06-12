@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.add(savedTheme);
     }
 
-toggleButton.addEventListener('click', () => {
+    toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
 
         if (body.classList.contains('dark-mode')) {
