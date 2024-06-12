@@ -1,81 +1,100 @@
-
 @media screen and (min-width: 360px) {
-    .about_Section {
-      width: 320px;
-      height: auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-   
-  
-    .aboutH1 {
-      width: 217px;
-      height: 64px;
-      
-      font-family: Impact, sans-serif; 
-      /* text-transform: uppercase; */
-  
-      color: var(--black);
-      font-weight: 400;
-      font-size: 52px;
-      line-height: 123%;
-      letter-spacing: 0.0346em;
-  
+  .about_Section {
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
   }
-  
-  
-    .aboutSpan {
-      color: var(--accet-green);
-    }
-  
-    .aboutImg {
-      display: block;
-      height: 374px;
-      margin: 0 auto;
-  
-    }
-  
-  
-    .h2_list{
-      width: 55px;
-      height: 40px;
-      font-family: var(--font-family); 
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 125%;
-      letter-spacing: 0.0156em; /* В em */
-  
+
+  .aboutH2 {
+    width: 217px;
+    height: 64px;
+
+    font-family: Impact, sans-serif;
+    /* text-transform: uppercase; */
+
+    color: var(--black);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 123%;
+    letter-spacing: 0.0346em;
   }
-    .about_Bio {
-      width: 320px;
-      height: 288px;
-      font-family: 'Poppins', sans-serif; /* Додаємо запасний шрифт на випадок, якщо Poppins не доступний */
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 24px; /* або 150% */
-      letter-spacing: 0.03125em; /* В em */
-  
-    }
-  
-    .bio_list {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 24px;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.05em;
-    }
-  /* 
-    .about_Education {
-      background-color: red;
-    }
-    .about_Role {
-      background-color: purple;
-    } */
-  
-    
+
+  .aboutSpan {
+    color: var(--accet-green);
   }
-  
-  
+
+  .aboutImg {
+    display: block;
+    height: 374px;
+    margin: 0 auto;
+  }
+
+  .about_Bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .titel {
+    /* width: 55px; */
+    height: 40px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+
+    color: var(--black);
+  }
+
+  .aboutMe_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 150%;
+    letter-spacing: 0.03em;
+  }
+
+  .about_Education {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .education_list {
+    gap: 12px;
+    margin-left: 32px;
+  }
+  .education_list li {
+    position: relative;
+  }
+
+  .education_list li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--accet-green);
+    border-radius: 25%; 
+  }
+
+  .list_Education {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+
+}
