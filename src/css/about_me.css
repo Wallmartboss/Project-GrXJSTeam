@@ -1,0 +1,81 @@
+
+@media screen and (min-width: 360px) {
+    .about_Section {
+      width: 320px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+   
+  
+    .aboutH1 {
+      width: 217px;
+      height: 64px;
+      
+      font-family: Impact, sans-serif; 
+      /* text-transform: uppercase; */
+  
+      color: var(--black);
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 123%;
+      letter-spacing: 0.0346em;
+  
+  }
+  
+  
+    .aboutSpan {
+      color: var(--accet-green);
+    }
+  
+    .aboutImg {
+      display: block;
+      height: 374px;
+      margin: 0 auto;
+  
+    }
+  
+  
+    .h2_list{
+      width: 55px;
+      height: 40px;
+      font-family: var(--font-family); 
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 125%;
+      letter-spacing: 0.0156em; /* В em */
+  
+  }
+    .about_Bio {
+      width: 320px;
+      height: 288px;
+      font-family: 'Poppins', sans-serif; /* Додаємо запасний шрифт на випадок, якщо Poppins не доступний */
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px; /* або 150% */
+      letter-spacing: 0.03125em; /* В em */
+  
+    }
+  
+    .bio_list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 24px;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+    }
+  /* 
+    .about_Education {
+      background-color: red;
+    }
+    .about_Role {
+      background-color: purple;
+    } */
+  
+    
+  }
+  
+  

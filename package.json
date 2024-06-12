@@ -1,5 +1,5 @@
 {
-  "name": "Project-GrXJSTeam",
+  "name": "project-grxjsteam",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,5 +19,7 @@
     "axios": "^1.7.2",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
-  }
+  },
+  "description": "DEV Portfolio Це результат роботи проєктної групи на командному проєкті з JavaScript",
+  "main": "vite.config.js"
 }
