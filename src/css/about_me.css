@@ -1,19 +1,14 @@
 @media screen and (min-width: 360px) {
   .about_Section {
-    width: 320px;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
   }
 
   .aboutH2 {
-    width: 217px;
-    height: 64px;
+
 
     font-family: Impact, sans-serif;
-    /* text-transform: uppercase; */
-
     color: var(--black);
     font-weight: 400;
     font-size: 52px;
@@ -96,5 +91,9 @@
     gap: 12px;
   }
 
+
+}
+
+@media screen and (min-width: 768px){
 
 }
