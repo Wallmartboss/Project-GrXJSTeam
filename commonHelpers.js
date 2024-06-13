@@ -6,7 +6,7 @@
             <div>
              <h3 class="project-subtitle">${c.title}</h3>
             <a class="project-link" href="${c.link}" target="_blank">VISIT
-            <svg class="project-icon" width="15" height="15">
+            <svg class="project-icon" width="20" height="20">
             <use href="${M}#icon-up-right"></use>
             </svg>
             </a>
