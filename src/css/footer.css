@@ -28,11 +28,17 @@ body.dark-mode .logo-link {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+<<<<<<< Updated upstream
 
 body.dark-mode .accent {
   color: #14c57c;
 }
 
+=======
+.accent.dark-mode {
+  color: #14c57c;
+}
+>>>>>>> Stashed changes
 .footer-link {
   color: var(--Black, #292929);
   font-family: 'Poppins', sans-serif;
