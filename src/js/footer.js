@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
           settings.advertising;
       }
     };
-
     applySavedSettings();
   }
 });
