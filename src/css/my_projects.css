@@ -92,7 +92,7 @@
 }
 
 .project-link:hover {
-  background-color: #BCDFD1;
+  background-color: var(--light-accent);
 }
 
 .project-icon {
@@ -146,7 +146,7 @@ body.dark-mode .project-link {
 }
 
 body.dark-mode .project-link:hover {
-  background-color: #BCDFD1;
+  background-color: var(--light-accent);
   color: var(--black);
 }
 
