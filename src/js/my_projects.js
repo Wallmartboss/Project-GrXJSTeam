@@ -122,7 +122,7 @@ function loadProjects() {
             <div>
              <h3 class="project-subtitle">${project.title}</h3>
             <a class="project-link" href="${project.link}" target="_blank">VISIT
-            <svg class="project-icon" width="15" height="15">
+            <svg class="project-icon" width="20" height="20">
             <use href="${sprite}#icon-up-right"></use>
             </svg>
             </a>
