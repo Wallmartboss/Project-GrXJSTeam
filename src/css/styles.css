@@ -32,7 +32,7 @@ body {
 }
 
 body.dark-mode {
-  --background-color: black;
+  --background-color: #1e2023;
   --text-color: white;
 }
 
@@ -54,6 +54,7 @@ body.dark-mode {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  width: 100%;
 }
 
 /* Для мобільного екрану від 360 px  */
