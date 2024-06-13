@@ -67,6 +67,9 @@
     margin-bottom: 80px;
   }
 }
+body.dark-mode .work-together-title {
+  color: #f0f0f0;
+}
 
 .work-together-title span {
   color: #00b068;
@@ -112,6 +115,9 @@
     width: 488px;
     line-height: 32px; /* 160% */
   }
+}
+body.dark-mode .work-together-contact p {
+  color: #f0f0f0;
 }
 
 .work-together-list {
@@ -162,7 +168,14 @@
   margin-left: 16px;
 }
 
-.work-together-link span:hover {
+body.dark-mode .work-together-link span {
+  color: #f0f0f0;
+}
+
+.work-together-link span:hover,
+.work-together-link span:focus,
+body.dark-mode .work-together-link span:hover,
+body.dark-mode .work-together-link span:focus {
   color: #00b068;
 }
 
@@ -213,6 +226,10 @@
   letter-spacing: 0.5px;
 }
 
+body.dark-mode .work-together-input-email {
+  background: #2a2d32;
+}
+
 .work-together-input-message {
   display: flex;
   padding: 16px;
@@ -234,6 +251,10 @@
   position: absolute;
   top: 16px;
   left: 16px;
+}
+
+body.dark-mode .work-together-input-message {
+  background: #2a2d32;
 }
 
 .work-together-btn {
@@ -301,13 +322,22 @@
   transition: opacity 0.5s ease, visibility 0.5s ease;
   @media screen and (min-width: 768px) {
     padding: 64px;
-    width: 364px;
+    width: 492px;
+    height: 280px;
   }
+}
+
+body.dark-mode .modal {
+  background-color: #2a2d32;
 }
 
 .modal-close-btn-icon {
   width: 24px;
   height: 24px;
+}
+
+body.dark-mode .modal-close-btn {
+  stroke: #f0f0f0;
 }
 
 .modal-close-btn {
@@ -337,4 +367,8 @@
   letter-spacing: -0.02em;
   color: #292929;
   text-align: center;
+}
+
+body.dark-mode .modal-text {
+  color: #f0f0f0;
 }
