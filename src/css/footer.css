@@ -4,24 +4,58 @@
   padding-bottom: 24px;
 }
 
-.logo-link {
+.logo {
   color: var(--Black, #292929);
   font-family: 'Impact', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-body.dark-mode .logo-link {
+.logo:hover,
+.logo:focus {
+  animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+body.dark-mode .logo {
   color: var(--white, #f0f0f0);
 }
+
 .accent {
   color: var(--Accent-green, #00b068);
   font-family: 'Impact', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -40,6 +74,7 @@ body.dark-mode .accent {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -101,6 +136,7 @@ body.dark-mode .footer-bottom-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-cookies:hover,
@@ -165,6 +201,7 @@ body.dark-mode .footer-bottom {
   flex-direction: column;
   align-items: center;
 }
+
 .modal-label {
   color: var(--Black, #292929);
   font-family: 'Poppins', sans-serif;
@@ -197,7 +234,17 @@ body.dark-mode .footer-bottom {
   margin-bottom: 10px;
 }
 
+/*-- tablet--768px--*/
+
 @media screen and (min-width: 768px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  .accent {
+    font-size: 32px;
+  }
+
   .footer-list {
     flex-direction: row;
     gap: 40px;
@@ -214,6 +261,8 @@ body.dark-mode .footer-bottom {
     padding-left: 0px;
   }
 }
+
+/*--desk--1280px--*/
 
 @media screen and (min-width: 1280px) {
   .footer-container {
