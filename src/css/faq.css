@@ -15,9 +15,9 @@
   margin-bottom: 40px;
 }
 .title-faq {
-  color: #292929;
+  color: var(--text-color);
   /* Mobile/h2-360 */
-  font-family: Impact, sans-serif;
+  font-family: var(--second-family);
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
@@ -27,10 +27,10 @@
   margin-bottom: 0;
 }
 .title-faq.dark-mode {
-  color: #f0f0f0;
+  color: var(--white);
 }
 .title-faq-span {
-  color: #00b068;
+  color: var(--accet-green);
 }
 .title-faq-span.dark-mode {
   color: #14c57c;
@@ -60,9 +60,9 @@
   width: 272px;
 }
 .title-item-list-header {
-  color: var(--Black, #292929);
+  color: var(--text-color);
   /* Mobile/caption-360 */
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -71,6 +71,7 @@
   text-transform: uppercase;
   margin-bottom: 0;
 }
+
 .btn-answear {
   background: none;
   border: none;
@@ -79,29 +80,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   width: 32px;
   height: 32px;
   margin-left: 16px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-answear {
-  width: 20px;
-  height: 20px;
-  transform: rotate(180deg);
-}
+
 .icon-answear {
   display: block;
   transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
-  height: 24px;
-  width: 24px;
+  --color2: var(--text-color);
+  stroke: var(--text-color);
+  height: 20px;
+  width: 20px;
 }
+.is-active .icon-answear {
+  transform: rotate(180deg);
+}
+
 .text-item-list {
-  color: var(--Black, #292929);
+  color: var(--text-color);
   /* Desktop-Tablet/body 1 */
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family);
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -110,7 +113,7 @@
   letter-spacing: 0.03em;
 }
 .text-item-list.dark-mode {
-  color: #f0f0f0;
+  color: var(--white);
 }
 .is-active.faq-item {
   background: rgba(0, 176, 104, 0.2); /* Фон активного елемента */
@@ -158,7 +161,7 @@
   left: 0;
   width: 100%;
   height: 7px;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
   z-index: 1;
 }
 .btn-answear:hover {
@@ -215,19 +218,20 @@
     max-width: 592px;
   }
   .faq-image-bg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1.194px 1.968px 0.562px 3.441px;
+    justify-content: center;
+    align-items: center;
     margin-top: 240px;
-    display: block;
-    width: 526px;
-    height: 408px;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(240, 240, 240, 0.4),
-        rgba(240, 240, 240, 0.4)
-      ),
-      url('../img/faq-bg.png'); /* Фонове зображення */
+    background: url('../images/faq/decor bg 4.png'); /* Фонове зображення */
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .faq-image-bg .dark-mode {
+    background-color: var(--black);
   }
   .header-container-faq {
     margin-bottom: 0;
@@ -246,11 +250,6 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(240, 240, 240, 0.4),
-        rgba(240, 240, 240, 0.4)
-      ),
-      url('../img/faq-bg2.png'); /* Фонове зображення */
+    background: url('../images/faq/decor bg 4.png');
   }
 }
