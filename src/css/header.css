@@ -131,12 +131,21 @@
 }
 
 .menu-toggle__icon {
-    fill: var(--text-color);
     --color3: var(--text-color);
+    transition: fill 0.3s ease;
+
+    &:hover {
+        --color3: var(--accet-green);
+    }
 }
 
 .menu-button__close {
     --color3: var(--text-color);
+    transition: fill 0.3s ease;
+
+    &:hover {
+        --color3: var(--accet-green);
+    }
 }
 
 .mob-menu {
