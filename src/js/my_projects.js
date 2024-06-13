@@ -26,21 +26,21 @@ const projects = [
     {
         image: project4,
         imageRetina: project4Retina,
-        techStack: 'Angular, Firebase',
+        techStack: 'HTML, CSS, JavaScript, Git',
         title: 'Green harvest webservice',
         link: 'https://yuriikyrychenko9.github.io/codeOrganic/'
     },
     {
         image: project5,
         imageRetina: project5Retina,
-        techStack: 'Vue.js, Laravel',
+        techStack: 'HTML, CSS, React, Git',
         title: 'wallet webservice',
-        link: '#'
+        link: 'https://wallmartboss.github.io/Project-GrXJSTeam/'
     },
     {
         image: project9,
         imageRetina: project9Retina,
-        techStack: 'Java, Spring Boot',
+        techStack: 'HTML, CSS, JavaScript',
         title: 'English excellence webservice',
         link: '#'
     },
@@ -54,43 +54,43 @@ const projects = [
     {
         image: project2,
         imageRetina: project2Retina,
-        techStack: 'React, Node.js',
+        techStack: 'HTML, CSS, React, Node.js ',
         title: 'mimino website',
         link: '#'
     },
     {
         image: project3,
         imageRetina: project3Retina,
-        techStack: 'Python, Django',
+        techStack: 'HTML, CSS, React',
         title: 'vyshyvanka vibes Landing Page',
         link: '#'
     },
     {
         image: project6,
         imageRetina: project6Retina,
-        techStack: 'Java, Spring Boot',
+        techStack: 'HTML, CSS, React, Git',
         title: 'chego jewelry website',
         link: '#'
     },
     {
         image: project7,
         imageRetina: project7Retina,
-        techStack: 'Java, Spring Boot',
+        techStack: 'HTML, CSS, React, Node.js',
         title: 'energy flow webservice',
         link: '#'
     },
     {
         image: project8,
         imageRetina: project8Retina,
-        techStack: 'Java, Spring Boot',
+        techStack: 'HTML, CSS, Node.js, Git',
         title: 'fruitbox online store',
         link: '#'
     },
     {
         image: project10,
         imageRetina: project10Retina,
-        techStack: 'Java, Spring Boot',
-        title: 'English excellence webservice',
+        techStack: 'HTML, CSS, React, Git',
+        title: 'starlight studio landing page',
         link: '#'
     }
 ];
@@ -115,13 +115,15 @@ function loadProjects() {
         const listItem = document.createElement('li');
 
         listItem.innerHTML = `
+           <div class="img-cont">
             <img class="project-img" src="${project.image}" srcset="${project.image} 1x, ${project.imageRetina} 2x" alt="${project.title}">
+            </div>
             <p class="project-text">Tech Stack: ${project.techStack}</p>
             <div>
              <h3 class="project-subtitle">${project.title}</h3>
             <a class="project-link" href="${project.link}" target="_blank">VISIT
             <svg class="project-icon" width="15" height="15">
-            <use href="${sprite}#icon-arrow-upright"></use>
+            <use href="${sprite}#icon-up-right"></use>
             </svg>
             </a>
             </div>
