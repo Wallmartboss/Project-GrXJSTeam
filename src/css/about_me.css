@@ -1,5 +1,5 @@
 @media screen and (min-width: 360px) {
-  .about_Section {
+  #about_section {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -117,14 +117,13 @@
   .cartsInfo {
     gap: 32px;
   }
-
   .about_Education {
     width: 336px;
   }
   .sectionGap {
     margin-bottom: 28px;
   }
-  .about_Section {
+  #about_section {
     position: relative;
   }
   .aboutMe_background_image {
@@ -139,3 +138,16 @@
     z-index: -1;
   }
 }
+@media screen and (min-width: 1280px) {
+    .aboutImg {
+        width: 384px;
+        height: 448px;
+      }
+      .about_Bio {
+        width: 408px;
+       height: 408px;
+      }
+      .aboutMe_list {
+
+      }
+    }
