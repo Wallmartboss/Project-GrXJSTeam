@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // const toggleButton = document.getElementById('theme-toggle');
   const toggleButton = document.querySelectorAll('.btn-toggle');    /* tech_skills */
-  console.log(toggleButton);
   const body = document.body;
   const marquee = document.querySelector(".marquee");     /* tech_skills */
   const marquee_tilt = document.querySelector(".marquee_tilt");   /* tech_skills */
