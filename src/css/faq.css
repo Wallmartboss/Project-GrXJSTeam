@@ -22,6 +22,10 @@
 .faq__title-accent.dark-mode {
   color: #14c57c;
 }
+.faq__item {
+  width: 100%;
+}
+
 .faq__item.is-active {
   background-color: rgba(0, 176, 104, 0.2);
   border-radius: 16px;
@@ -46,6 +50,8 @@
   display: flex;
   gap: 16px;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .faq__item.is-active > .faq__subtitle .faq__btn {
@@ -128,7 +134,7 @@
     display: flex;
     justify-content: space-between;
 
-    background-image: url(./images/faq/decor bg 4.png);
+    background-image: url(./images/faq/decor-bg-4.png);
     background-repeat: no-repeat;
     background-position: left 32px top 612px;
     background-size: 526px;
@@ -144,10 +150,10 @@
   .faq__btn {
     width: 592px;
   }
-}
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
-  .faq .container {
-    background-image: url(./images/faq/decor bg 4 2х.png);
+  @media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
+    .faq .container {
+      background-image: url(./images/faq/decor-bg-4-2x.png);
+    }
   }
 }
