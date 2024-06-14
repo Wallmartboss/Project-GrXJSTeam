@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     tog.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
 
-
-toggleButton.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-
         if (body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark-mode');
             marquee.classList.add("dark-mode");    /* tech_skills */
