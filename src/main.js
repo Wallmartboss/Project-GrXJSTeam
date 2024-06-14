@@ -1,6 +1,6 @@
+localStorage.removeItem('theme');
 document.addEventListener('DOMContentLoaded', () => {
-    // const toggleButton = document.getElementById('theme-toggle');
-    const toggleButton = document.querySelector('.toggler');    /* tech_skills */
+    const toggleButton = document.querySelectorAll('..btn-toggle-checkbox');   
     const body = document.body;
     const marquee = document.querySelector(".marquee");     /* tech_skills */
     const marquee_tilt = document.querySelector(".marquee_tilt");   /* tech_skills */
@@ -9,11 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer_bottom_text = document.querySelector(".footer-bottom-text");
     const accent = document.querySelector(".accent");
 
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+  }
+  toggleButton.forEach((tog) =>
+    tog.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
 
-    const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        body.classList.add(savedTheme);
-          }
 
 toggleButton.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
@@ -39,7 +42,6 @@ toggleButton.addEventListener('click', () => {
           footer_bottom_text.classList.remove("dark-mode");
           accent.classList.remove("dark-mode");
         
-        
-        }
-        });
+   }
+    }));
 });
