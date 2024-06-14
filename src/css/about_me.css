@@ -1,5 +1,6 @@
 @media screen and (min-width: 360px) {
   #about_section {
+    max-width: 360px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -12,6 +13,7 @@
     font-size: 52px;
     line-height: 123%;
     letter-spacing: 0.0346em;
+    
   }
 
   .aboutSpan {
@@ -21,6 +23,7 @@
   .aboutImg {
     display: block;
     /* height: 374px; */
+    max-width: 100%;
     margin: 0 auto;
     border-radius: 16px;
   }
@@ -29,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
   .cartsInfo {
     display: flex;
@@ -47,6 +50,7 @@
     letter-spacing: 0.01em;
 
     color: var(--black);
+    margin-bottom: 8px;
   }
 
   .aboutMe_list {
@@ -66,11 +70,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 
   .education_list {
-    gap: 12px;
+    gap: 16px;
     margin-left: 32px;
   }
   .education_list li {
@@ -100,6 +104,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    #about_section {
+        max-width: 768px;
+    }
   .aboutH2 {
     font-size: 108px;
     line-height: 114%;
@@ -142,6 +149,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+    #about_section {
+        max-width: 1280px;
+    }
   .sectionGap {
     width: 100%;
   }

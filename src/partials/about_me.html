@@ -1,51 +1,54 @@
-<div class="container " id="about_section">
+<div class="container" id="about_section">
   <h2 class="aboutH2 dark-mode">ABOUT <span class="aboutSpan">ME</span></h2>
   <div class="cartsInfo sectionGap">
-    <img
+    <!-- <img
       class="aboutImg"
       srcset="
-        ..//images/about_me/about_me-desk-1x-min.jpg 1x,
-        ..//images/about_me/about_me-desk-2x-min.jpg 2x
+        ..//images/about_me/about_me-mob-1x-min.jpg 1x,
+        ..//images/about_me/about_me-mob-2x-min.jpg 2x
       "
-      src="..//images/about_me/about_me-desk-1x-min.jpg"
+      src="..//images/about_me/about_me-mob-1x-min.jpg"
       alt="the guy with a laptop"
       width="320"
       height="374"
       loading="lazy"
-    />
-
-    <!-- <picture>
-      <source
-        media="(min-width: 768px)"
+    /> -->
+    <picture>
+        <source
         srcset="
-          /21-group-project/assets/hero-girl@1-e5f79b25.png  1x,
-          /21-group-project/assets/hero-girl@2x-36610339.png 2x
-        "
-        type="image/png"
+          ../images/about_me/about_me-desk-1x-min.jpg 1x,
+          ../images/about_me/about_me-desk-2x-min.jpg 2x"
+        type="image/jpg"
+        media="(min-width: 1280px)"
       />
       <source
-        media="(max-width: 767px)"
         srcset="
-          /21-group-project/assets/hero-girl-mob@1-ec429786.png  1x,
-          /21-group-project/assets/hero-girl-mob@2x-fc1dd890.png 2x
+          ../images/about_me/about_me-tab-1x-min.jpg 1x,
+          ../images/about_me/about_me-tab-2x-min.jpg 2x"
+        type="image/jpg"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../images/about_me/about_me-mob-1x-min.jpg 1x,
+          ../images/about_me/about_me-mob-2x-min.jpg 2x
         "
-        type="image/png"
+        type="image/jpg"
+        media="(max-with: 767px)"
       />
       <img
-        src="/21-group-project/assets/hero-girl@1-e5f79b25.png"
-        alt="girl-with-orange"
-        class="hero-photo aos-init aos-animate"
-        width="452"
-        height="702"
+        class="aboutImg"
+        src="..//images/about_me/about_me-mob-1x-min.jpg"
+        alt="the guy with a laptop"
         loading="lazy"
-        data-aos="zoom-in"
       />
-    </picture> -->
+    </picture>
+
     <div class="about_Bio">
       <h3 class="titel dark-mode">BIO</h3>
 
       <p class="aboutMe_list">
-        I'm Lloyd Jefferson, a talented programmer specializing  in software
+        I'm Lloyd Jefferson, a talented programmer specializing in software
         development. My expertise spans various programming languages and
         technologies, and I am dedicated to continually enhancing my skills. I
         thrive on seeking unconventional and creative solutions to problems,
@@ -63,8 +66,7 @@
         current with the  latest innovations in the field.
       </p>
     </div>
-   
-  </div> 
+  </div>
   <div class="aboutMe_background_image"></div>
   <div class="cartsInfo ml240px">
     <div class="about_Education">
