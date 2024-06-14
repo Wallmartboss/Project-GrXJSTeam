@@ -49,6 +49,10 @@ body.dark-mode {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Ддя екрану від 320 px, і щоб від тягнувся від 320 до 360 */
 .container {
   padding-left: 20px;
