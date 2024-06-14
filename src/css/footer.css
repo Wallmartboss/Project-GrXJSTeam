@@ -4,7 +4,7 @@
   padding-bottom: 24px;
 }
 
-.logo {
+.logo-link {
   color: var(--Black, #292929);
   font-family: 'Impact', sans-serif;
   font-size: 24px;
@@ -17,8 +17,8 @@
   text-transform: uppercase;
 }
 
-.logo:hover,
-.logo:focus {
+.logo-link:hover,
+.logo-link:focus {
   animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -62,17 +62,11 @@ body.dark-mode .logo {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-<<<<<<< Updated upstream
 
 body.dark-mode .accent {
   color: #14c57c;
 }
 
-=======
-.accent.dark-mode {
-  color: #14c57c;
-}
->>>>>>> Stashed changes
 .footer-link {
   color: var(--Black, #292929);
   font-family: 'Poppins', sans-serif;
@@ -87,7 +81,7 @@ body.dark-mode .accent {
 .footer-link:focus {
   color: #00b068;
 }
-
+body.dark-mode .logo-link,
 body.dark-mode .footer-link,
 body.dark-mode .footer-cookies {
   color: var(--white, #f0f0f0);
