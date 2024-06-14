@@ -128,7 +128,7 @@
     display: flex;
     justify-content: space-between;
 
-    background-image: url(./images/faq/decor\ bg\ 4.png);
+    background-image: url(./images/faq/decor bg 4.png);
     background-repeat: no-repeat;
     background-position: left 32px top 612px;
     background-size: 526px;
@@ -148,6 +148,6 @@
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
   .faq .container {
-    background-image: url(./images/faq/decor\ bg\ 4\ 2х.png);
+    background-image: url(./images/faq/decor bg 4 2х.png);
   }
 }
