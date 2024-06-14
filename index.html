@@ -11,7 +11,7 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/Project-GrXJSTeam/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-61272158.css">
+    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-3b5f0e09.css">
   </head>
   <body>
     <header class="header">
@@ -20,20 +20,21 @@
       >Lloyd<span class="accent">Jefferson.</span></a
     >
     <div class="btn-toggle-header">
-      <button type="button" class="btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-      <div class="handle"></div>
+      <input type="checkbox" id="toggle" class="btn-toggle-checkbox" />
+      <label for="toggle" class="btn-toggle">
+        <div class="handle"></div>
+      </label>
     </div>
-    
     <nav class="nav">
       <ul class="nav__list list">
         <li class="nav__item">
-          <a href="#" class="nav__link link">About me</a>
+          <a href="#about_section" class="nav__link link">About me</a>
         </li>
         <li class="nav__item">
           <a href="#projects" class="nav__link link">Projects</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link link">Contacts</a>
+          <a href="#work-together" class="nav__link link">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -58,9 +59,8 @@
     <div class="mob-menu js-menu-container">
       <div class="mob-container">
         <a href="./index.html" class="logo link"
-      >Lloyd<span class="accent">Jefferson.</span></a
-    >
-      <button type="button" class="menu-toggle js-close-menu">
+      >Lloyd<span class="accent">Jefferson.</span></a>
+        <button type="button" class="menu-toggle js-close-menu">
         <svg
           class="menu-toggle__icon"
           width="32"
@@ -72,33 +72,32 @@
             href="/Project-GrXJSTeam/assets/sprite-8bc75b9f.svg#icon-x"
           ></use>
         </svg>
-      </button>
+        </button>
       </div>
       <div class="container">
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link link"
+              <a href="#about_section" class="mobile-menu__link link"
                 >About me</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link link">Projects</a>
+              <a href="#projects" class="mobile-menu__link link">Projects</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="#" class="mobile-menu__link link">Contacts</a>
+              <a href="#work-together" class="mobile-menu__link link">Contacts</a>
             </li>
           </ul>
-        
         <div class="btn-toggle-header">
-      <button type="button" class="btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-      <div class="handle"></div>
-    </div>
-      </button>
+                <input type="checkbox" id="toggle-mobile" class="btn-toggle-checkbox" />
+                <label for="toggle-mobile" class="btn-toggle">
+                    <div class="handle"></div>
+                </label>
+            </div>
       </div>
     </div>
     
 </header>
-
 
     <main>
       
