@@ -1,4 +1,5 @@
-/* Базові стилі для мобільних пристроїв */
+/* Світла тема */
+/* Базові стилі для мобільних пристроїв (min-width: 360px) */
 .hero-section {
   padding: 0;
 }
@@ -27,13 +28,11 @@
     height: 804px;
     background-image: url('../images/hero/decor-bg-desk-light.png');
     background-size: 1216px 772px;
-
     position: relative;
   }
 }
 
 .hero-title {
-  /* Mobile/h1 -360 */
   font-family: var(--second-family);
   font-size: 64px;
   font-style: normal;
@@ -105,7 +104,6 @@
 
 .hero-order-text {
   color: var(--Black);
-  /* Mobile/caption-360 */
   font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
@@ -152,7 +150,6 @@
 
 .hero-description {
   color: var(--black);
-  /* Mobile/caption-360 */
   font-family: var(--font-family);
   font-size: 18px;
   font-style: normal;
@@ -202,7 +199,6 @@
 
 .hero-links {
   color: var(--black);
-  /* Desktop-Tablet/body 1 */
   font-family: var(--font-family);
   font-size: 16px;
   font-style: normal;
@@ -257,3 +253,132 @@
             font-size: 32px;
         }
 } */
+
+/* Темна тема */
+
+body.dark-mode .hero-container {
+  background-color: #1e2023;
+  background-image: url('../images/hero/decor-bg-mob-dark.png');
+
+  /* @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 928px;
+    padding: 16px 32px;
+    background-image: url('../images/hero/decor-bg-tab-light.png');
+    background-size: 704px 896px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 804px;
+    background-image: url('../images/hero/decor-bg-desk-light.png');
+    background-size: 1216px 772px;
+    position: relative;
+  } */
+}
+
+body.dark-mode .hero-title {
+  @media screen and (min-width: 768px) {
+    font-size: 136px;
+    line-height: 156px; /* 114.706% */
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 553px;
+    height: 596px;
+    font-size: 124px;
+    line-height: 148px; /* 119.355% */
+    padding-bottom: 80px;
+  }
+}
+
+body.dark-mode .color-content.default {
+  color: var(--white);
+}
+
+body.dark-mode .color-content.selection {
+  color: #14c57c;
+}
+
+body.dark-mode .hero-icon-arrow {
+  --color1: #14c57c;
+}
+
+/* body.dark-mode .hero-order-text {
+  color: var(--white);
+} */
+
+body.dark-mode .hero-decor-box {
+  background: rgba(20, 197, 124, 0.2);
+
+  /* @media screen and (min-width: 768px) {
+    width: 261px;
+    height: 100%;
+  } */
+}
+
+body.dark-mode .hero-order-box:hover .hero-decor-box,
+body.dark-mode .hero-order-box:focus-within .hero-decor-box {
+  background: rgba(20, 197, 124, 0.6);
+}
+
+/* body.dark-mode .hero-image {
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 592px;
+    height: 444px;
+    border-radius: 32px;
+    position: absolute;
+    top: 88px;
+    right: 32px;
+  }
+} */
+
+body.dark-mode .hero-description {
+  color: var(--white);
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 592px;
+    height: 256px;
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+body.dark-mode .social-media-box {
+  background: #2a2d32;
+
+  /* @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 40px 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  } */
+}
+
+body.dark-mode .hero-links {
+  color: var(--white);
+
+  /* @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  } */
+}
+
+body.dark-mode .social-media-item:hover,
+body.dark-mode .social-media-item:focus-within {
+  color: #14c57c;
+}
