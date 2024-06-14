@@ -22,26 +22,15 @@ body {
   letter-spacing: 0.02em;
   background: var(--light-grey);
   transform: rotate(2deg);
-  padding: 40px 0px;
+  padding: 32px 0px;
   text-transform: uppercase;
   color: var(--accet-green);
   position: relative;
   z-index: -1;
 }
 .marquee_tilt.dark-mode {
-  overflow: hidden;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: 0.02em;
   background: #2a2d32;
-  transform: rotate(2deg);
-  padding: 40px 0px;
-  text-transform: uppercase;
   color: #14c57c;
-  position: relative;
-  z-index: -1;
 }
 .marquee {
   overflow: hidden;
@@ -50,20 +39,12 @@ body {
   font-size: 32px;
   line-height: 125%;
   letter-spacing: 0.02em;
-  padding: 40px 0px;
+  padding: 32px 0px;
   text-transform: uppercase;
   color: var(--black);
   background-color: var(--light-accent);
 }
 .marquee.dark-mode {
-  overflow: hidden;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-  padding: 40px 0px;
-  text-transform: uppercase;
   color: var(--white);
   background-color: #204136;
 }
@@ -76,12 +57,11 @@ body {
   display: flex;
   flex-shrink: 0;
   margin: 0;
-  /* padding: 10px 15px; */
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 8s;
-  animation-timing-function: linear; /* ease-in-out;*/
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   align-items: center;
 }
@@ -99,6 +79,11 @@ body {
 .color_dot {
   margin-left: 24px;
   margin-right: 24px;
+}
+.dot {
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .bw_dot {
@@ -125,23 +110,16 @@ body {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
-  }
-  .marquee.dark-mode {
-    font-size: 36px;
-    line-height: 133%;
-    letter-spacing: 0.01em;
+    padding: 40px 0px;
   }
 
   .marquee_tilt {
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
+    padding: 40px 0px;
   }
-  .marquee_tilt.dark-mode {
-    font-size: 36px;
-    line-height: 133%;
-    letter-spacing: 0.01em;
-  }
+
   .tech_skills {
     padding-bottom: 62px;
     padding-top: 62px;
