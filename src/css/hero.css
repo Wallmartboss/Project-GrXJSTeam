@@ -260,15 +260,11 @@ body.dark-mode .hero-container {
   background-color: #1e2023;
   background-image: url('../images/hero/decor-bg-mob-dark.png');
 
-  /* @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 928px;
-    padding: 16px 32px;
-    background-image: url('../images/hero/decor-bg-tab-light.png');
-    background-size: 704px 896px;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/decor-bg-tab-dark.png');
   }
 
-  @media screen and (min-width: 1280px) {
+  /* @media screen and (min-width: 1280px) {
     width: 1280px;
     height: 804px;
     background-image: url('../images/hero/decor-bg-desk-light.png');
@@ -278,13 +274,6 @@ body.dark-mode .hero-container {
 }
 
 body.dark-mode .hero-title {
-  @media screen and (min-width: 768px) {
-    font-size: 136px;
-    line-height: 156px; /* 114.706% */
-    padding-top: 72px;
-    padding-bottom: 60px;
-  }
-
   @media screen and (min-width: 1280px) {
     width: 553px;
     height: 596px;
@@ -312,11 +301,6 @@ body.dark-mode .hero-icon-arrow {
 
 body.dark-mode .hero-decor-box {
   background: rgba(20, 197, 124, 0.2);
-
-  /* @media screen and (min-width: 768px) {
-    width: 261px;
-    height: 100%;
-  } */
 }
 
 body.dark-mode .hero-order-box:hover .hero-decor-box,
@@ -339,13 +323,7 @@ body.dark-mode .hero-order-box:focus-within .hero-decor-box {
 body.dark-mode .hero-description {
   color: var(--white);
 
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
-    line-height: 32px; /* 160% */
-    padding-bottom: 64px;
-  }
-
-  @media screen and (min-width: 1280px) {
+  /* @media screen and (min-width: 1280px) {
     width: 592px;
     height: 256px;
     position: absolute;
@@ -353,29 +331,19 @@ body.dark-mode .hero-description {
     bottom: 16px;
     padding-top: 80px;
     padding-bottom: 80px;
-  }
+  } */
 }
 
 body.dark-mode .social-media-box {
   background: #2a2d32;
 
-  /* @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 40px 0px;
-  }
-
-  @media screen and (min-width: 1280px) {
+  /* @media screen and (min-width: 1280px) {
     width: 1280px;
   } */
 }
 
 body.dark-mode .hero-links {
   color: var(--white);
-
-  /* @media screen and (min-width: 768px) {
-    flex-direction: row;
-    gap: 40px;
-  } */
 }
 
 body.dark-mode .social-media-item:hover,
