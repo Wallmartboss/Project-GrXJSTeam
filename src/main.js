@@ -1,3 +1,4 @@
+localStorage.removeItem('theme');
 document.addEventListener('DOMContentLoaded', () => {
   // const toggleButton = document.getElementById('theme-toggle');
   const toggleButton = document.querySelectorAll('.btn-toggle');    /* tech_skills */
