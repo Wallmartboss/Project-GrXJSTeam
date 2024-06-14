@@ -104,7 +104,7 @@
   height: 24px;
 }
 
-button {
+button.load-more {
   position: relative;
   padding: 10px 20px;
   font-size: 16px;
@@ -122,7 +122,7 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button::after {
+button.load-more::after {
   content: '';
   position: absolute;
   left: 50%;
