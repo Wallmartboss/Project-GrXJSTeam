@@ -100,12 +100,17 @@ const projectsPerPage = 3;
 const projectList = document.querySelector('.project-list');
 const loadMoreButton = document.querySelector('.load-more');
 
-loadMoreButton.addEventListener('click', loadProjects);
+
+
+loadMoreButton.addEventListener('click', (event) => loadProjects(event));
 
 loadProjects();
 
-function loadProjects() {
-    for (let i = loadedProjects; i < loadedProjects + projectsPerPage; i++) {
+
+function loadProjects(event) {
+    const initialLoadedProjects = loadedProjects;
+
+    for (let i = loadedProjects; i < initialLoadedProjects + projectsPerPage; i++) {
         if (i >= projects.length) {
             loadMoreButton.style.display = 'none';
             break;
@@ -122,7 +127,7 @@ function loadProjects() {
             <div>
              <h3 class="project-subtitle">${project.title}</h3>
             <a class="project-link" href="${project.link}" target="_blank">VISIT
-            <svg class="project-icon" width="20" height="20">
+            <svg class="project-icon" width="15" height="15">
             <use href="${sprite}#icon-up-right"></use>
             </svg>
             </a>
@@ -130,13 +135,13 @@ function loadProjects() {
         `;
 
         projectList.appendChild(listItem);
+        loadedProjects++;
     }
 
-    loadedProjects += projectsPerPage;
-
-
-    const lastProject = projectList.lastElementChild;
-    if (lastProject) {
-        lastProject.scrollIntoView({ behavior: 'smooth' });
+    if (event && event.type === 'click') {
+        const lastProject = projectList.lastElementChild;
+        if (lastProject) {
+            lastProject.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 }
