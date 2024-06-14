@@ -11,16 +11,101 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/Project-GrXJSTeam/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-5a9a5b00.css">
+    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-61272158.css">
   </head>
   <body>
+    <header class="header">
+  <div class="container header__container">
+    <a href="../index.html" class="logo link"
+      >Lloyd<span class="accent">Jefferson.</span></a
+    >
+    <div class="btn-toggle-header">
+      <button type="button" class="btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+      <div class="handle"></div>
+    </div>
     
+    <nav class="nav">
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a href="#" class="nav__link link">About me</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+    >
+      <svg
+        class="menu-toggle__icon"
+        width="32"
+        height="32"
+        aria-label="Mobile menu switch"
+      >
+        <use
+          class="menu-button__open"
+          href="../images/icons/sprite.svg#icon-menu-icon"
+        ></use>
+      </svg>
+    </button>
+    <!-- Mobile menu -->
+    <div class="mob-menu js-menu-container">
+      <div class="mob-container">
+        <a href="../index.html" class="logo link"
+      >Lloyd<span class="accent">Jefferson.</span></a
+    >
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__icon"
+          width="32"
+          height="32"
+          aria-label="Mobile menu switch"
+        >
+          <use
+            class="menu-button__close"
+            href="../images/icons/sprite.svg#icon-x"
+          ></use>
+        </svg>
+      </button>
+      </div>
+      <div class="container">
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="../index.html" class="mobile-menu__link link"
+                >About me</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Projects</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Contacts</a>
+            </li>
+          </ul>
+        
+        <div class="btn-toggle-header">
+      <button type="button" class="btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+      <div class="handle"></div>
+    </div>
+      </button>
+      </div>
+    </div>
+    
+</header>
+
+
     <main>
       
       
       <section class="tech_skills">
   <h2 class="visually-hidden">Tech skills</h2>
-  <p class="toggler">Switch theme</p>
+  <!-- <p class="toggler">Switch theme</p> -->
 <div class="marquee">
   <div class="marquee__inner">
     <p class="marquee__line">
