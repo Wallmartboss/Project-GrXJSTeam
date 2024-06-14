@@ -18,7 +18,7 @@
     z-index: -1;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .work-together {
     position: relative;
 
@@ -28,10 +28,10 @@
     background-image: url(../images/work_together/wt-desk-decor-2x.png);
     content: '';
     position: absolute;
-    top: -104px;
+    top: -144px;
     right: 32px;
-    width: 336px;
-    height: 260px;
+    width: 526px;
+    height: 408px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@
     font-size: 108px;
     line-height: 124px; /* 114.815% */
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 80px;
   }
 }
@@ -82,7 +82,7 @@ body.dark-mode .work-together-title {
   @media screen and (min-width: 768px) {
     gap: 60px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row;
     gap: 136px;
@@ -94,7 +94,7 @@ body.dark-mode .work-together-title {
   align-items: flex-start;
   gap: 32px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     gap: 120px;
   }
 }
@@ -130,7 +130,7 @@ body.dark-mode .work-together-contact p {
     flex-direction: row;
     gap: 16px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
   }
@@ -191,7 +191,8 @@ body.dark-mode .work-together-link span:focus {
   gap: 32px;
   align-self: stretch;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
+    width: 100%;
   }
 }
 
@@ -202,8 +203,7 @@ body.dark-mode .work-together-link span:focus {
   gap: 32px;
   align-self: stretch;
 
-  @media screen and (min-width: 1440px) {
-    width: 592px;
+  @media screen and (min-width: 1280px) {
   }
 }
 
