@@ -237,7 +237,7 @@ body.dark-mode .work-together-link span:focus {
   align-self: stretch;
   border-radius: 8px;
   background: #e4e5e6;
-  color: #292929;
+  color: var(--text-color);
 
   font-family: Poppins;
   font-size: 16px;
@@ -263,6 +263,13 @@ body.dark-mode .work-together-input-email {
 }
 
 .work-together-input-message {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+  color: var(--text-color);
   display: flex;
   text-wrap: wrap;
   padding: 16px;
@@ -273,13 +280,6 @@ body.dark-mode .work-together-input-email {
   border-radius: 8px;
   background-color: #e4e5e6;
   height: 119px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.5px;
-  color: var(--text-color);
   border: none;
   outline: none;
 }
