@@ -1,4 +1,4 @@
-localStorage.removeItem('theme');
+// localStorage.removeItem('theme');
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.querySelectorAll('.btn-toggle-checkbox');
   const body = document.body;
