@@ -4,6 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
   }
 
   .aboutH2 {
@@ -13,7 +16,6 @@
     font-size: 52px;
     line-height: 123%;
     letter-spacing: 0.0346em;
-    
   }
 
   .aboutSpan {
@@ -98,15 +100,18 @@
     flex-direction: column;
     gap: 12px;
   }
-  .dark-mode{
-    color: var(--white);
+  .dark-mode {
+    /* color: var(--white); */
   }
 }
 
 @media screen and (min-width: 768px) {
-    #about_section {
-        max-width: 768px;
-    }
+  #about_section {
+    max-width: 768px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+ 
+  }
   .aboutH2 {
     font-size: 108px;
     line-height: 114%;
@@ -142,16 +147,26 @@
     left: 51%;
     width: 336px;
     height: 252px;
-    background-image: url('..//images/about_me/about-tab-decor-1x.png');
+    background-image: url('../images/about_me/about-tab-decor-1x.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
-  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .aboutMe_background_image {
+        background-image: url('../images/about_me/about-tab-decor-2x.png');
+    }
+}
+
 }
 @media screen and (min-width: 1280px) {
-    #about_section {
-        max-width: 1280px;
-    }
+  #about_section {
+    max-width: 1280px;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
   .sectionGap {
     width: 100%;
   }
@@ -159,9 +174,17 @@
     width: 384px;
     height: 448px;
     margin-left: 240px;
-    margin-top:272px;
+    margin-top: 272px;
+    background-image: url('../images/about_me/about-desk-decor-1x.png');
+    background-size: cover;
+}
 
-  }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .aboutImg {
+        background-image: url('../images/about_me/about-desk-decor-2x.png');
+    }
+}
+
   .about_Bio {
     width: 488px;
     margin-right: 0;
@@ -176,12 +199,10 @@
     top: 54%;
     left: 68%;
     background-image: url('..//images/about_me/about-desk-decor-1x.png');
-
   }
- 
-  .ml240px{
+
+  .ml240px {
     margin-left: 240px;
     gap: 136px;
   }
 }
-
