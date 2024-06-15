@@ -1,0 +1,208 @@
+#about_section {
+  max-width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.aboutH2 {
+  font-family: Impact, sans-serif;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.0346em;
+}
+
+.aboutSpan {
+  color: var(--accet-green);
+}
+
+.aboutImg {
+  display: block;
+  /* height: 374px; */
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.about_Bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+}
+.cartsInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.titel {
+  /* width: 55px; */
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.aboutMe_list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+body.dark-mode .titel,
+body.dark-mode .aboutH2,
+body.dark-mode .aboutMe_list {
+  color: var(--white);
+}
+
+.about_Education {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education_list {
+  gap: 16px;
+  margin-left: 32px;
+}
+.education_list li {
+  position: relative;
+}
+
+.education_list li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--accet-green);
+  border-radius: 25%;
+}
+
+.list_Education {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+}
+/* .dark-mode {
+  color: var(--white);
+} */
+
+@media screen and (min-width: 768px) {
+  #about_section {
+    max-width: 768px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+  .aboutH2 {
+    font-size: 108px;
+    line-height: 114%;
+    letter-spacing: 0.0167em;
+  }
+
+  .aboutImg {
+    width: 336px;
+    height: 392px;
+    margin-left: 0px;
+    margin-top: 408px;
+    /* position: absolute; */
+  }
+  .about_Bio {
+    width: 336px;
+    margin: 0 auto 0 0;
+  }
+  .cartsInfo {
+    gap: 32px;
+  }
+  .about_Education {
+    width: 336px;
+  }
+  .sectionGap {
+    margin-bottom: 28px;
+  }
+  #about_section {
+    position: relative;
+  }
+  .aboutMe_background_image {
+    position: absolute;
+    top: 69%;
+    left: 51%;
+    width: 336px;
+    height: 252px;
+    background-image: url('../images/about_me/about-tab-decor-1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .aboutMe_background_image {
+      background-image: url('../images/about_me/about-tab-decor-2x.png');
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  #about_section {
+    max-width: 1280px;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  .sectionGap {
+    width: 100%;
+  }
+  .aboutImg {
+    width: 384px;
+    height: 448px;
+    margin-left: 240px;
+    margin-top: 272px;
+    background-image: url('../images/about_me/about-desk-decor-1x.png');
+    background-size: cover;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .aboutImg {
+      background-image: url('../images/about_me/about-desk-decor-2x.png');
+    }
+  }
+
+  .about_Bio {
+    width: 488px;
+    margin-right: 0;
+    gap: 24px;
+  }
+  .titel {
+    margin-bottom: 8px;
+  }
+  .aboutMe_background_image {
+    width: 384px;
+    height: 288px;
+    top: 54%;
+    left: 68%;
+    background-image: url('..//images/about_me/about-desk-decor-1x.png');
+  }
+
+  .ml240px {
+    margin-left: 240px;
+    gap: 136px;
+  }
+}
