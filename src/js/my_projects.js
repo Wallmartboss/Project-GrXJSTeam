@@ -139,9 +139,10 @@ function loadProjects(event) {
     }
 
     if (event && event.type === 'click') {
-        const lastProject = projectList.lastElementChild;
-        if (lastProject) {
-            lastProject.scrollIntoView({ behavior: 'smooth' });
+        const firstNewProject = projectList.children[initialLoadedProjects];
+        if (firstNewProject) {
+            const topPosition = firstNewProject.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: topPosition, behavior: 'smooth' });
         }
     }
 }
