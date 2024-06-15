@@ -1,6 +1,6 @@
 
 .benefits {
-    padding-top: 80px;
+    padding: 40px 0px;
 }
 
 .benefits .container {
@@ -48,9 +48,10 @@
     top: 25%;
     left: 25%;
     fill: none;
-    stroke: var(--accet-green);
+    stroke: var(#00b068);
     flex-shrink: 0;
 }
+
 
 .benefits-titles {
     color: var(--color-text);
