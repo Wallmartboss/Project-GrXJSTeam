@@ -228,8 +228,8 @@ body.dark-mode .footer-bottom {
   background-color: #00b068;
 }
 
-body.dark-mode .modal button:hover,
-body.dark-mode .modal button:focus {
+body.dark-mode .modal-footer button:hover,
+body.dark-mode .modal-footer button:focus {
   color: #f0f0f0;
 }
 

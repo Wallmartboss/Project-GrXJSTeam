@@ -281,11 +281,7 @@ body.dark-mode .work-together-input-email {
   letter-spacing: 0.5px;
   color: var(--text-color);
   border: none;
-}
-.work-together-input-message::placeholder {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+  outline: none;
 }
 
 body.dark-mode .work-together-input-message {
