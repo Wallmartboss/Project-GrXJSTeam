@@ -217,13 +217,13 @@ body.dark-mode .work-together-link span:focus {
   border-radius: 8px;
   background: #e4e5e6;
   color: rgba(41, 41, 41, 0.4);
-
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 24px; /* 150% */
   letter-spacing: 0.5px;
+  border: none;
 }
 
 body.dark-mode .work-together-input-email {
@@ -246,6 +246,7 @@ body.dark-mode .work-together-input-email {
   line-height: 24px; /* 150% */
   letter-spacing: 0.5px;
   color: rgba(41, 41, 41, 0.4);
+  border: none;
 }
 .work-together-input-message::placeholder {
   position: absolute;
@@ -269,6 +270,7 @@ body.dark-mode .work-together-input-message {
   background: #00b068;
   color: var(--White, #f0f0f0);
   text-align: center;
+  border: none;
 
   /* Desktop-Tablet/body 2 bold */
   font-family: Poppins;
@@ -334,6 +336,7 @@ body.dark-mode .modal {
 .modal-close-btn-icon {
   width: 24px;
   height: 24px;
+  stroke: red;
 }
 
 body.dark-mode .modal-close-btn {
@@ -346,7 +349,7 @@ body.dark-mode .modal-close-btn {
   top: 16px;
   right: 16px;
   background-color: transparent;
-  stroke: #292929;
+  /* stroke: #292929; */
   border: none;
 }
 
