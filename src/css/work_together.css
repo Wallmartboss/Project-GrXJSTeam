@@ -197,6 +197,8 @@ body.dark-mode .work-together-link span:focus {
 }
 
 .form-fields {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -207,7 +209,26 @@ body.dark-mode .work-together-link span:focus {
   }
 }
 
+.form-fields::after {
+  position: absolute;
+  top: 48px;
+  left: 0;
+
+  content: attr(data-status);
+  color: #00b068;
+  font-size: 14px;
+}
+
+.form-fields.new-color::after {
+  color: #e74a3b; /* Новий колір */
+}
+
 .work-together-input-email {
+  outline: transparent;
+  background-color: transparent;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
   display: flex;
   height: 48px;
   padding: 16px;
@@ -216,7 +237,8 @@ body.dark-mode .work-together-link span:focus {
   align-self: stretch;
   border-radius: 8px;
   background: #e4e5e6;
-  color: rgba(41, 41, 41, 0.4);
+  color: #292929;
+
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -225,19 +247,31 @@ body.dark-mode .work-together-link span:focus {
   letter-spacing: 0.5px;
   border: none;
 }
+.work-together-input-email.new-color {
+  color: #e74a3b; /* Новий колір */
+}
 
 body.dark-mode .work-together-input-email {
   background: #2a2d32;
 }
 
+.work-together-form-icon {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
 .work-together-input-message {
   display: flex;
+  text-wrap: wrap;
   padding: 16px;
   align-items: flex-start;
+  box-sizing: border-box;
   gap: 10px;
   align-self: stretch;
   border-radius: 8px;
-  background: #e4e5e6;
+  background-color: #e4e5e6;
   height: 119px;
   font-family: Poppins;
   font-size: 16px;
@@ -245,7 +279,7 @@ body.dark-mode .work-together-input-email {
   font-weight: 300;
   line-height: 24px; /* 150% */
   letter-spacing: 0.5px;
-  color: rgba(41, 41, 41, 0.4);
+  color: #292929;
   border: none;
 }
 .work-together-input-message::placeholder {
@@ -336,7 +370,7 @@ body.dark-mode .modal {
 .modal-close-btn-icon {
   width: 24px;
   height: 24px;
-  stroke: red;
+  stroke: #292929;
 }
 
 body.dark-mode .modal-close-btn {
@@ -374,4 +408,8 @@ body.dark-mode .modal-close-btn {
 
 body.dark-mode .modal-text {
   color: #f0f0f0;
+}
+
+input[type='email'] {
+  text-transform: lowercase;
 }

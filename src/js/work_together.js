@@ -9,10 +9,11 @@ const localStorageEmailKey = 'user-email';
 const localStorageCommentKey = 'user-comment';
 
 const form = document.querySelector('.work-together-form');
-const emailInput = document.getElementById('user-email');
+const emailInput = document.querySelector('.work-together-input-email');
 const commentInput = document.getElementById('user-comment');
 const inputFields = document.querySelector('.form-fields');
 const backdrop = document.querySelector('.backdrop');
+const emailIcon = document.querySelector('.work-together-form-icon');
 
 loadFormData();
 
@@ -46,10 +47,16 @@ function validateEmail() {
     emailInput.classList.remove('invalid');
     emailInput.classList.add('valid');
     inputFields.dataset.status = 'Success!';
+    inputFields.classList.remove('new-color');
+    emailInput.classList.remove('new-color');
+    emailIcon.style.display = 'block';
   } else {
     emailInput.classList.remove('valid');
     emailInput.classList.add('invalid');
     inputFields.dataset.status = 'Invalid email, try again';
+    inputFields.classList.add('new-color');
+    emailInput.classList.add('new-color');
+    emailIcon.style.display = 'none';
   }
 }
 
@@ -78,6 +85,7 @@ async function submitForm(e) {
     .then(() => {
       clearFormData();
       resetForm();
+      emailIcon.style.display = 'none';
       backdrop.classList.add('is-open');
     })
     .catch(error => {
