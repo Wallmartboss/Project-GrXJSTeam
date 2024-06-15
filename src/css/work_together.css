@@ -251,6 +251,7 @@ body.dark-mode .work-together-link span:focus {
   border: none;
 }
 .work-together-input-email.new-color {
+  font-family: var(--font-family);
   color: #e74a3b; /* Новий колір */
 }
 
