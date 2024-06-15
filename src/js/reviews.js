@@ -60,13 +60,14 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-document.addEventListener('keydown', (event) => {
+const sectionReview = document.querySelector(".reviews");
+sectionReview.addEventListener('keydown', (event) => {
     console.log('e', event)
     event.preventDefault();
-    if (event.code === 'ArrowRight') {
-      swiper.slideNext(300);
-    } else if (event.code === 'ArrowLeft') {
-        swiper.slidePrev(300)
+  if (event.code === 'ArrowRight') {
+        swiper.slideNext(300);
+  } else if (event.code === 'ArrowLeft') {
+         swiper.slidePrev(300)
     }
 })
 
