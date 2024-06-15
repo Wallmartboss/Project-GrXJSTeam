@@ -279,7 +279,7 @@ body.dark-mode .work-together-input-email {
   font-weight: 300;
   line-height: 24px; /* 150% */
   letter-spacing: 0.5px;
-  color: #292929;
+  color: var(--text-color);
   border: none;
 }
 .work-together-input-message::placeholder {
@@ -340,7 +340,7 @@ body.dark-mode .work-together-input-message {
   pointer-events: auto;
 }
 
-.modal {
+.work-together-modal {
   display: flex;
   width: 320px;
   padding: 48px 32px;
@@ -363,14 +363,19 @@ body.dark-mode .work-together-input-message {
   }
 }
 
-body.dark-mode .modal {
+body.dark-mode .work-together-modal {
   background-color: #2a2d32;
 }
 
 .modal-close-btn-icon {
   width: 24px;
   height: 24px;
-  stroke: #292929;
+  --color3: var(--text-color);
+  transition: fill 0.3s ease;
+
+  &:hover {
+    --color3: var(--accet-green);
+  }
 }
 
 body.dark-mode .modal-close-btn {
