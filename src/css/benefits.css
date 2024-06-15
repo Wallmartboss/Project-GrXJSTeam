@@ -48,10 +48,9 @@
     top: 25%;
     left: 25%;
     fill: none;
-    stroke: var(#00b068);
+    stroke: var(--accet-green);
     flex-shrink: 0;
 }
-
 
 .benefits-titles {
     color: var(--color-text);
@@ -71,6 +70,10 @@
     font-weight: 300;
     line-height: 1.5em;
     letter-spacing: 0.03em;
+}
+
+.benefits-image-desktop {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -129,10 +132,10 @@
         position: relative;
     }
 
-    .benefits-bg {
+    .benefits-image-desktop {
+        display: block;
         width: 526px;
         height: 408px;
-        background-image: url('../img/decor-bg-benefits.svg');
         z-index: -1;
         position: absolute;
         top: -20px;
