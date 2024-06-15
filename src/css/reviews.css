@@ -103,7 +103,7 @@ body.dark-mode .swiper-button-prev {
   background-color: #e4e5e6;
 }
 
-body.dark-mode.swiper-button-prev:hover {
+body.dark-mode .swiper-button-prev:hover {
   background-color: #3b3f45;
 }
 
@@ -141,7 +141,7 @@ body.dark-mode .swiper-button-next {
   background-color: #e4e5e6;
 }
 
-body.dark-mode.swiper-button-next:hover {
+body.dark-mode .swiper-button-next:hover {
   background-color: #3b3f45;
 }
 
@@ -153,6 +153,7 @@ body.dark-mode.swiper-button-next:hover {
 .swiper-button-disabled .prev-arrow-icon,
 .swiper-button-disabled .next-arrow-icon {
   --color1: #ccc;
+  cursor: not-allowed;
 }
 
 body.dark-mode .swiper-button-disabled .prev-arrow-icon,
@@ -164,10 +165,14 @@ body.dark-mode .swiper-button-disabled .next-arrow-icon {
     fill: var(--text-color-disabled);
         --color1: var(--text-color-disabled);
 } */
-
-/* body.dark-mode .swiper-button-disabled {
+.swiper-button-disabled {
   background-color: transparent;
-} */
+  cursor: not-allowed;
+}
+body.dark-mode .swiper-button-disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
 
 .next-arrow-icon {
   fill: var(--text-color);

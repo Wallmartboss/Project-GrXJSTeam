@@ -1,10 +1,14 @@
+.work-together {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
 @media screen and (min-width: 768px) {
   .work-together {
     padding-top: 62px;
     padding-bottom: 62px;
-    position: relative;
-
-    z-index: 1;
   }
   .work-together::before {
     background-image: url(../images/work_together/wt-tab-decor-2x.png);
@@ -24,9 +28,6 @@
   .work-together {
     padding-top: 82px;
     padding-bottom: 82px;
-    position: relative;
-
-    z-index: 1;
   }
   .work-together::before {
     background-image: url(../images/work_together/wt-desk-decor-2x.png);
