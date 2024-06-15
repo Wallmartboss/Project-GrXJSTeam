@@ -144,7 +144,7 @@ body.dark-mode .footer-bottom-text {
   color: #00b068;
 }
 
-.modal {
+.modal-footer {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -167,7 +167,7 @@ body.dark-mode .footer-bottom-text {
   display: none;
 }
 
-body.dark-mode .modal {
+body.dark-mode .modal-footer {
   background-color: #2a2d32;
 }
 
@@ -212,7 +212,7 @@ body.dark-mode .footer-bottom {
   text-align: center;
 }
 
-.modal button {
+.modal-footer button {
   margin-top: 10px;
   width: 100px;
   height: 30px;
@@ -223,8 +223,8 @@ body.dark-mode .footer-bottom {
   cursor: pointer;
 }
 
-.modal button:hover,
-.modal button:focus {
+.modal-footer button:hover,
+.modal-footer button:focus {
   background-color: #00b068;
 }
 
@@ -233,7 +233,7 @@ body.dark-mode .modal button:focus {
   color: #f0f0f0;
 }
 
-.modal h2 {
+.modal-footer h2 {
   margin-top: 0;
   text-align: center;
   color: #00b068;
