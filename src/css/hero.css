@@ -1,0 +1,320 @@
+/* Світла тема */
+/* Базові стилі для мобільних пристроїв (min-width: 360px) */
+
+.hero-section {
+  padding: 0;
+}
+
+.hero-container {
+  width: 360px;
+  /* height: 736px; */
+  /* margin: auto; */
+  /* padding: 16px 20px; */
+  /* background-color: var(--white); */
+  background-image: url('../images/hero/decor-bg-mob-light.png');
+  background-size: 320px 704px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('../images/hero/decor-bg-mob-light-2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 928px;
+    padding: 16px 32px;
+    background-image: url('../images/hero/decor-bg-tab-light.png');
+    background-size: 704px 896px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/hero/decor-bg-tab-light-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 804px;
+    background-image: url('../images/hero/decor-bg-desk-light.png');
+    background-size: 1216px 772px;
+    position: relative;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/hero/decor-bg-desk-light-2x.png');
+    }
+  }
+}
+
+.hero-title {
+  font-family: var(--second-family);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px; /* 125% */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 96px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 136px;
+    line-height: 156px; /* 114.706% */
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 553px;
+    height: 596px;
+    font-size: 124px;
+    line-height: 148px; /* 119.355% */
+    padding-bottom: 80px;
+  }
+}
+
+.color-content.default {
+  color: var(--black);
+}
+
+.color-content.selection {
+  color: var(--accet-green);
+}
+
+.hero-order-box {
+  position: relative;
+  max-width: 100%;
+  height: 92px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 360px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 416px;
+    height: 96px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 72px;
+  }
+}
+
+.hero-order-link {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .hero-order-link {
+    width: 100%;
+  }
+}
+.hero-icon-arrow {
+  width: 28px;
+  height: 28px;
+  --color1: var(--accet-green);
+}
+
+.hero-order-text {
+  color: var(--Black);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-left: 12px;
+}
+
+.hero-decor-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 165px;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(0, 176, 104, 0.2);
+
+  @media screen and (min-width: 768px) {
+    width: 261px;
+    height: 100%;
+  }
+}
+
+.hero-order-box:hover .hero-decor-box,
+.hero-order-box:focus-within .hero-decor-box {
+  background: rgba(0, 176, 104, 0.6);
+}
+
+.hero-image {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 592px;
+    height: 444px;
+    border-radius: 32px;
+    position: absolute;
+    top: 88px;
+    right: 32px;
+  }
+}
+
+.hero-description {
+  color: var(--black);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 56px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 592px;
+    height: 256px;
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.social-media-box {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 32px 0px;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-grey);
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    /* width: 768px; */
+    padding: 40px 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    /* width: 1280px; */
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hero-links {
+  color: var(--black);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.social-media-item:hover,
+.social-media-item:focus-within {
+  color: var(--accet-green);
+}
+
+/* Темна тема */
+
+body.dark-mode .hero-container {
+  background-color: #1e2023;
+  background-image: url('../images/hero/decor-bg-mob-dark.png');
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('../images/hero/decor-bg-mob-dark-2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/decor-bg-tab-dark.png');
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/hero/decor-bg-tab-dark-2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/hero/decor-bg-desk-dark.png');
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/hero/decor-bg-desk-dark-2x.png');
+    }
+  }
+}
+
+body.dark-mode .hero-title {
+  @media screen and (min-width: 1280px) {
+    width: 553px;
+    height: 596px;
+    font-size: 124px;
+    line-height: 148px; /* 119.355% */
+    padding-bottom: 80px;
+  }
+}
+
+body.dark-mode .color-content.default {
+  color: var(--white);
+}
+
+body.dark-mode .color-content.selection {
+  color: #14c57c;
+}
+
+body.dark-mode .hero-icon-arrow {
+  --color1: #14c57c;
+}
+
+body.dark-mode .hero-decor-box {
+  background: rgba(20, 197, 124, 0.2);
+}
+
+body.dark-mode .hero-order-box:hover .hero-decor-box,
+body.dark-mode .hero-order-box:focus-within .hero-decor-box {
+  background: rgba(20, 197, 124, 0.6);
+}
+
+body.dark-mode .hero-description {
+  color: var(--white);
+}
+
+body.dark-mode .social-media-box {
+  background: #2a2d32;
+}
+
+body.dark-mode .hero-links {
+  color: var(--white);
+}
+
+body.dark-mode .social-media-item:hover,
+body.dark-mode .social-media-item:focus-within {
+  color: #14c57c;
+}
