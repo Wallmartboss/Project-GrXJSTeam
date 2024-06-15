@@ -1,4 +1,6 @@
 .reviews {
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -21,12 +23,6 @@ margin-bottom: 40px;
 
 .swiper {
 position: relative;
-}
-
-.swiper-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
 }
 
 .swiper-slide {
@@ -94,6 +90,7 @@ right: 56px;
 transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+z-index: 1;
 }
 
 .swiper-button-prev.dark-mode {
@@ -111,10 +108,12 @@ background-color: #3b3f45;
 }
 
 .prev-arrow-icon {
-    fill: #292929;
+    fill: var(--text-color);
+    --color1: var(--text-color);
 }
 
 .swiper-button-next {
+    z-index: 1;
     border: 1px solid rgba(41, 41, 41, 0.3);
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -145,21 +144,22 @@ background-color: #3b3f45;
     background-color: #3b3f45;
 }
 
-.is-disable {
+.swiper-button-disabled {
     border: 1px solid rgba(41, 41, 41, 0.1);
     background-color: #f0f0f0;
 }
+/* .swiper-button-disabled > .next-arrow-icon  {
+    fill: var(--text-color-disabled);
+        --color1: var(--text-color-disabled);
+} */
 
-.is-disable.dark-mode {
+.swiper-button-disabled.dark-mode {
     background-color: #292929;
 }
 
-.is-disable-icon {
-    fill: #e4e5e6;
-}
-
-.is-disable-icon.dark-mode {
-    fill: #3b3f45;
+.next-arrow-icon {
+    fill: var(--text-color);
+    --color1: var(--text-color);
 }
 
 
@@ -197,7 +197,6 @@ background-color: #3b3f45;
 
     .swiper-slide {
     width: 592px;
-    height: 224px;
      }
 
     .swiper-button-prev {      
@@ -210,7 +209,4 @@ background-color: #3b3f45;
         width: 48px;
         height: 48px;
          }
-
-
-
 }
