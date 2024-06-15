@@ -217,6 +217,7 @@ body.dark-mode .footer-bottom {
   width: 100px;
   height: 30px;
   border-radius: 6px;
+  color: #292929;
   border: transparent;
   background-color: #14c57c;
   cursor: pointer;
@@ -225,6 +226,11 @@ body.dark-mode .footer-bottom {
 .modal button:hover,
 .modal button:focus {
   background-color: #00b068;
+}
+
+body.dark-mode .modal button:hover,
+body.dark-mode .modal button:focus {
+  color: #f0f0f0;
 }
 
 .modal h2 {
