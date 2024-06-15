@@ -120,7 +120,7 @@ function loadProjects(event) {
         const listItem = document.createElement('li');
 
         listItem.innerHTML = `
-           <div class="img-cont">
+           <div class="img-container">
             <img class="project-img" src="${project.image}" srcset="${project.image} 1x, ${project.imageRetina} 2x" alt="${project.title}">
             </div>
             <p class="project-text">Tech Stack: ${project.techStack}</p>

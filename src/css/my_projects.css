@@ -45,6 +45,7 @@
 
 .project-img {
   border-radius: 16px;
+  width: 320px;
 }
 
 .project-text {
@@ -104,7 +105,7 @@
   height: 24px;
 }
 
-button.load-more {
+.load-more {
   position: relative;
   padding: 10px 20px;
   font-size: 16px;
@@ -122,7 +123,7 @@ button.load-more {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button.load-more::after {
+.load-more::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -133,13 +134,13 @@ button.load-more::after {
   background-color: var(--accet-green);
 }
 
-button:hover {
+.load-more:hover {
   color: var(--accet-green);
 }
 
 /* ============== body.dark-mode styles ================= */
 
-body.dark-mode button,
+body.dark-mode .load-more,
 body.dark-mode .projects-title,
 body.dark-mode .project-text,
 body.dark-mode .project-subtitle,
@@ -156,16 +157,16 @@ body.dark-mode .project-link {
   background-color: #2a2d32;
 }
 
-body.dark-mode button:hover {
+body.dark-mode .load-more:hover {
   color: var(--accet-green);
 }
 
-body.dark-mode .img-cont {
+body.dark-mode .img-container {
   position: relative;
   display: inline-block;
 }
 
-body.dark-mode .img-cont::before {
+body.dark-mode .img-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -217,6 +218,10 @@ body.dark-mode .img-cont::before {
     max-width: 704px;
   }
 
+  .project-img {
+    width: 704px;
+  }
+
   .project-text {
     margin-top: 16px;
     margin-bottom: 20px;
@@ -265,6 +270,10 @@ body.dark-mode .img-cont::before {
 
   .project-list li {
     max-width: 1008px;
+  }
+
+  .project-img {
+    width: 1008px;
   }
 
   .project-subtitle {
