@@ -28,7 +28,7 @@ body {
   position: relative;
   z-index: -1;
 }
-.marquee_tilt.dark-mode {
+body.dark-mode .marquee_tilt {
   background: #2a2d32;
   color: #14c57c;
 }
@@ -44,7 +44,7 @@ body {
   color: var(--black);
   background-color: var(--light-accent);
 }
-.marquee.dark-mode {
+body.dark-mode .marquee {
   color: var(--white);
   background-color: #204136;
 }
@@ -91,8 +91,12 @@ body {
   align-items: center;
   justify-items: center;
 }
-
-.filter-white {
+body.dark-mode .bw_dot {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* } */
+  /* .filter-white { */
   filter: invert(100%) sepia(0%) saturate(519%) hue-rotate(326deg)
     brightness(119%) contrast(88%);
 }
