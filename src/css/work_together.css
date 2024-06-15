@@ -1,5 +1,7 @@
 @media screen and (min-width: 768px) {
   .work-together {
+    padding-top: 62px;
+    padding-bottom: 62px;
     position: relative;
 
     z-index: 1;
@@ -8,7 +10,7 @@
     background-image: url(../images/work_together/wt-tab-decor-2x.png);
     content: '';
     position: absolute;
-    top: -104px;
+    top: -42px;
     right: 32px;
     width: 336px;
     height: 260px;
@@ -20,6 +22,8 @@
 }
 @media screen and (min-width: 1280px) {
   .work-together {
+    padding-top: 82px;
+    padding-bottom: 82px;
     position: relative;
 
     z-index: 1;
@@ -28,7 +32,7 @@
     background-image: url(../images/work_together/wt-desk-decor-2x.png);
     content: '';
     position: absolute;
-    top: -144px;
+    top: -62px;
     right: 32px;
     width: 526px;
     height: 408px;
