@@ -253,12 +253,12 @@ body.dark-mode .work-together-link span:focus {
   border: none;
 }
 .work-together-input-email.new-color {
-  font-family: var(--font-family);
   color: #e74a3b; /* Новий колір */
 }
 
 body.dark-mode .work-together-input-email {
   background: #2a2d32;
+  font-family: var(--font-family);
 }
 
 .work-together-form-icon {
@@ -288,6 +288,7 @@ body.dark-mode .work-together-input-email {
   height: 119px;
   border: none;
   outline: none;
+  resize: none;
 }
 
 body.dark-mode .work-together-input-message {
