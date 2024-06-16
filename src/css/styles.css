@@ -83,3 +83,30 @@ html {
     width: 1280px;
   }
 }
+
+/* Go to top btn styles */
+#scrollToTopBtn {
+  display: none;
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: var(--light-grey);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn .hero-icon-arrow {
+  width: 28px;
+  height: 28px;
+  transform: rotate(270deg);
+}
+
+body.dark-mode #scrollToTopBtn {
+  background: #2a2d32;
+}
