@@ -20,12 +20,12 @@
   --font-family: 'Poppins', sans-serif;
   --second-family: 'Impact', sans-serif;
   --third-family: 'Montserrat', sans-serif;
-  --background-color: white;
+  --background-color: --white;
   --text-color: black;
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
   min-width: 320px;
