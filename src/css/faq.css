@@ -38,6 +38,14 @@
   border-bottom: 1px solid #ccc;
   padding: 28px 24px;
   margin: 0;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+.title-text {
+  display: flex;
   text-align: left;
   color: var(--text-color);
   font-family: var(--font-family);
@@ -46,14 +54,16 @@
   line-height: 1.55;
   letter-spacing: 0.028em;
   text-transform: uppercase;
-
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
+  width: 490px;
 }
-
+.icon-box {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-self: center;
+  height: 15px;
+  width: 30px;
+}
 body.dark-mode .faq__btn {
   stroke: var(--white);
 }
@@ -63,17 +73,18 @@ body.dark-mode .faq__btn {
 }
 
 .faq__icon {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
   text-align: right;
-  align-self: center;
+  align-self: center; */
   transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* --color2: var(--text-color); */
-  fill: var(--black);
-  height: 10px;
-  width: 40px;
+  stroke: var(--text-color);
+  fill: none;
+  width: 30px;
+  height: 15px;
   /* flex-shrink: 0; */
   padding-top: 4px;
 }
