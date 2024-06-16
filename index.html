@@ -13,9 +13,10 @@
     <script type="module" crossorigin src="/Project-GrXJSTeam/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Project-GrXJSTeam/assets/vendor-600bb652.js">
     <link rel="stylesheet" href="/Project-GrXJSTeam/assets/vendor-23d9f17b.css">
-    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-30d641a5.css">
+    <link rel="stylesheet" href="/Project-GrXJSTeam/assets/index-2c5b1e9e.css">
   </head>
-     <header class="header">
+  <body>
+    <header class="header">
   <div class="container header__container">
     <a href="./index.html" class="logo link"
       >Lloyd<span class="accent">Jefferson.</span></a
@@ -60,44 +61,48 @@
     <div class="mob-menu js-menu-container">
       <div class="mob-container">
         <a href="./index.html" class="logo link"
-      >Lloyd<span class="accent">Jefferson.</span></a>
-        <button type="button" class="menu-toggle js-close-menu">
-        <svg
-          class="menu-toggle__icon"
-          width="32"
-          height="32"
-          aria-label="Mobile menu switch"
+          >Lloyd<span class="accent">Jefferson.</span></a
         >
-          <use
-            class="menu-button__close"
-            href="/Project-GrXJSTeam/assets/sprite-e9b1c324.svg#icon-x"
-          ></use>
-        </svg>
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg
+            class="menu-toggle__icon"
+            width="32"
+            height="32"
+            aria-label="Mobile menu switch"
+          >
+            <use
+              class="menu-button__close"
+              href="/Project-GrXJSTeam/assets/sprite-e9b1c324.svg#icon-x"
+            ></use>
+          </svg>
         </button>
       </div>
       <div class="container">
-          <ul class="mobile-menu__list list">
-            <li class="mobile-menu__item">
-              <a href="#about_section" class="mobile-menu__link link"
-                >About me</a
-              >
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#projects" class="mobile-menu__link link">Projects</a>
-            </li>
-            <li class="mobile-menu__item">
-              <a href="#work-together" class="mobile-menu__link link">Contacts</a>
-            </li>
-          </ul>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a href="#about_section" class="mobile-menu__link link">About me</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#projects" class="mobile-menu__link link">Projects</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#work-together" class="mobile-menu__link link">Contacts</a>
+          </li>
+        </ul>
         <div class="btn-toggle-header">
-                <input type="checkbox" id="toggle-mobile" class="btn-toggle-checkbox" />
-                <label for="toggle-mobile" class="btn-toggle">
-                    <div class="handle"></div>
-                </label>
-            </div>
+          <input
+            type="checkbox"
+            id="toggle-mobile"
+            class="btn-toggle-checkbox"
+          />
+          <label for="toggle-mobile" class="btn-toggle">
+            <div class="handle"></div>
+          </label>
+        </div>
       </div>
     </div>
     
+  </div>
 </header>
 
     <main>
@@ -547,7 +552,7 @@
   
 </section>
 
-       <section class="reviews">
+      <section class="reviews">
     <div class="container">
     <h2 class="reviews-title">Reviews</h2>
     <div class="swiper">
@@ -738,6 +743,11 @@
 </footer>
 
     </footer>
+    <button id="scrollToTopBtn" title="Go to top">
+      <svg class="hero-icon-arrow">
+        <use href="/Project-GrXJSTeam/assets/sprite-e9b1c324.svg#icon-arrow-order"></use>
+      </svg>
+    </button>
     
   </body>
 </html>
