@@ -94,11 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
         analytics.checked = settings.analytics || false;
         security.checked = settings.security || false;
       } else {
-        console.error('No settings found in localStorage');
+        // Немає збережених налаштувань в локальному сховищі
       }
     } catch (e) {
       // Обробляємо помилку при отриманні налаштувань з локального сховища
-      console.error('Could not retrieve settings from localStorage', e);
+      console.log('Could not retrieve settings from localStorage', e);
     }
   }
   // Функція закриття модального вікна при кліку на Escape
