@@ -1,9 +1,10 @@
 .benefits {
-  padding: 40px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .benefits .container {
-  max-width: 320px;
+  max-width: 360px;
 }
 
 .benefits-title {
@@ -28,7 +29,7 @@
 }
 
 .benefits-item {
-  width: 300px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   gap: 16px;
