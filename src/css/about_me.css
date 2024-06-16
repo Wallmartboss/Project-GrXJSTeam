@@ -187,7 +187,7 @@ body.dark-mode .aboutMe_list {
 
   .about_Bio {
     width: 488px;
-    margin-right: 0;
+    margin: 0 0 0 auto;
     gap: 24px;
   }
   .titel {
