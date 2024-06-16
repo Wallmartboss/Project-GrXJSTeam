@@ -183,7 +183,7 @@ body.dark-mode .aboutMe_list {
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .aboutImg {
-      background-image: url('./images/about_me/about-desk-decor-2x.png');
+      background-image: url('../images/about_me/about-desk-decor-2x.png');
     }
   }
 
