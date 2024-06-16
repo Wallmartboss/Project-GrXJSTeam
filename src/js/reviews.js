@@ -18,13 +18,13 @@ function getReviews() {
 };
 
 const results = getReviews();
-console.log(results);
 results.then((data) => {
-    console.log(data);
     const markup = reviewsMarkup(data);
     reviewsList.innerHTML = markup;
 }).catch((error) => {
-    console.log(error);
+   const errorMarkup = `<li class="error-review">
+   <p class="error-review-text">Not Found</p></li>`
+   return reviewsList.innerHTML = errowMarkup;
 });
 
 const swiper = new Swiper('.swiper', {

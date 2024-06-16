@@ -16,10 +16,15 @@
   text-align: center;
   margin-bottom: 40px;
 }
-
-/* .reviews-title.dark-mode {
-  color: #f0f0f0;
-} */
+.error-review {
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  background: #e4e5e6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .swiper {
   position: relative;
