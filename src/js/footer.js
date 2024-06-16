@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeCookieSettings = document.getElementById('close-cookie-settings');
   const saveCookieSettings = document.getElementById('save-cookie-settings');
   const cookieSettingsForm = document.getElementById('cookie-settings-form');
+  const cookieSettingsBackdrop = document.getElementById(
+    'cookie-settings-backdrop'
+  );
 
   // Функція для налаштування роботи з  cookies
   function setupCookieSettings() {
@@ -14,17 +17,24 @@ document.addEventListener('DOMContentLoaded', () => {
       cookieSettingsModal &&
       closeCookieSettings &&
       saveCookieSettings &&
-      cookieSettingsForm
+      cookieSettingsForm &&
+      cookieSettingsBackdrop
     ) {
       // Додаємо слухача події для відкриття модального вікна
       cookieSettingsLink.addEventListener('click', event => {
         event.preventDefault();
         cookieSettingsModal.classList.remove('modal-hide');
         cookieSettingsModal.classList.add('modal-show');
+        cookieSettingsBackdrop.classList.remove('modal-hide');
+        cookieSettingsBackdrop.classList.add('modal-show');
+
+        // Додаємо слухача події для обробки натискання клавіші Esc
+        document.addEventListener('keydown', handleEscKey);
       });
 
       // Додаємо слухача події для закриття модального вікна
       closeCookieSettings.addEventListener('click', closeModal);
+      cookieSettingsBackdrop.addEventListener('click', closeModal);
 
       // Додаємо слухача події для закриття модального вікна при кліку поза ним
       cookieSettingsModal.addEventListener('click', event => {
@@ -45,6 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     cookieSettingsModal.classList.remove('modal-show');
     cookieSettingsModal.classList.add('modal-hide');
+    cookieSettingsBackdrop.classList.remove('modal-show');
+    cookieSettingsBackdrop.classList.add('modal-hide');
+
+    // Видаляємо слухача події для обробки натискання клавіші Esc
+    document.removeEventListener('keydown', handleEscKey);
   }
 
   // Функція для збереження налаштувань cookies
@@ -84,6 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
       // Обробляємо помилку при отриманні налаштувань з локального сховища
       console.error('Could not retrieve settings from localStorage', e);
+    }
+  }
+  // Функція закриття модального вікна при кліку на Escape
+  function handleEscKey(event) {
+    if (event.key === 'Escape') {
+      closeModal();
     }
   }
 
