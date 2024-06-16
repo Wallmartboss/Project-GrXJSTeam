@@ -25,7 +25,14 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.error-review-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
 .swiper {
   position: relative;
 }
