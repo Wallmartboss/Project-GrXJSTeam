@@ -18,82 +18,74 @@ const emailIcon = document.querySelector('.work-together-form-icon');
 loadFormData();
 
 emailInput.addEventListener('input', validateEmail);
-
 commentInput.addEventListener('input', validateComment);
-
 form.addEventListener('submit', submitForm);
-
-form.addEventListener('input', e => {
-  const email = emailInput.value;
-  const comment = commentInput.value;
-
-  saveFormData(email, comment);
-});
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    backdrop.classList.remove('is-open');
-  }
-});
-
-backdrop.addEventListener('click', e => {
-  if (e.target === backdrop || e.target.closest('.modal-close-btn')) {
-    closeModal();
-  }
-});
+form.addEventListener('input', handleFormInput);
+document.addEventListener('keydown', handleEscapeKey);
+backdrop.addEventListener('click', handleBackdropClick);
 
 function validateEmail() {
-  if (emailRegex.test(emailInput.value.trim())) {
-    emailInput.classList.remove('invalid');
-    emailInput.classList.add('valid');
-    inputFields.dataset.status = 'Success!';
-    inputFields.classList.remove('new-color');
-    emailInput.classList.remove('new-color');
-    emailIcon.style.display = 'block';
-  } else {
-    emailInput.classList.remove('valid');
-    emailInput.classList.add('invalid');
-    inputFields.dataset.status = 'Invalid email, try again';
-    inputFields.classList.add('new-color');
-    emailInput.classList.add('new-color');
-    emailIcon.style.display = 'none';
-  }
+  const email = emailInput.value.trim();
+  const isValid = emailRegex.test(email);
+
+  emailInput.classList.toggle('valid', isValid);
+  emailInput.classList.toggle('invalid', !isValid);
+
+  inputFields.dataset.status = isValid
+    ? 'Success!'
+    : 'Invalid email, try again';
+  inputFields.classList.toggle('new-color', !isValid);
+  emailInput.classList.toggle('new-color', !isValid);
+  emailIcon.style.display = isValid ? 'block' : 'none';
 }
 
 function validateComment() {
-  if (commentInput.value.trim().length >= 3) {
-    commentInput.classList.remove('invalid');
-    commentInput.classList.add('valid');
-  } else {
-    commentInput.classList.remove('valid');
-    commentInput.classList.add('invalid');
-  }
+  const comment = commentInput.value.trim();
+  const isValid = comment.length >= 3;
+
+  commentInput.classList.toggle('valid', isValid);
+  commentInput.classList.toggle('invalid', !isValid);
 }
 
 async function submitForm(e) {
   e.preventDefault();
 
-  const emailValue = e.target.elements.userEmail.value.trim().toLowerCase();
-  const commentlValue = e.target.elements.userComment.value.trim();
+  const emailValue = emailInput.value.trim().toLowerCase();
+  const commentValue = commentInput.value.trim();
 
-  const userData = {
-    email: emailValue,
-    comment: commentlValue,
-  };
+  const userData = { email: emailValue, comment: commentValue };
 
-  await postData(userData)
-    .then(() => {
-      clearFormData();
-      resetForm();
-      emailIcon.style.display = 'none';
-      backdrop.classList.add('is-open');
-    })
-    .catch(error => {
-      iziToast.error({
-        position: 'topRight',
-        message: 'An error occurred while sending the request. Try again.',
-      });
+  try {
+    await postData(userData);
+    clearFormData();
+    resetForm();
+    emailIcon.style.display = 'none';
+    backdrop.classList.add('is-open');
+  } catch (error) {
+    iziToast.error({
+      position: 'topRight',
+      message: 'An error occurred while sending the request. Try again.',
     });
+  }
+}
+
+function handleFormInput() {
+  const email = emailInput.value;
+  const comment = commentInput.value;
+
+  saveFormData(email, comment);
+}
+
+function handleEscapeKey(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+}
+
+function handleBackdropClick(e) {
+  if (e.target === backdrop || e.target.closest('.modal-close-btn')) {
+    closeModal();
+  }
 }
 
 function closeModal() {
@@ -103,19 +95,19 @@ function closeModal() {
 
 function resetForm() {
   inputFields.dataset.status = '';
-  emailInput.classList.remove('valid');
-  commentInput.classList.remove('valid');
+  emailInput.classList.remove('valid', 'invalid');
+  commentInput.classList.remove('valid', 'invalid');
   form.reset();
 }
 
-function saveFormData(emailValue, commentlValue) {
-  localStorage.setItem(localStorageEmailKey, emailValue);
-  localStorage.setItem(localStorageCommentKey, commentlValue);
+function saveFormData(email, comment) {
+  localStorage.setItem(localStorageEmailKey, email);
+  localStorage.setItem(localStorageCommentKey, comment);
 }
 
 function loadFormData() {
-  emailInput.value = localStorage.getItem(localStorageEmailKey) ?? '';
-  commentInput.value = localStorage.getItem(localStorageCommentKey) ?? '';
+  emailInput.value = localStorage.getItem(localStorageEmailKey) || '';
+  commentInput.value = localStorage.getItem(localStorageCommentKey) || '';
 }
 
 function clearFormData() {
