@@ -29,13 +29,19 @@ results.then((data) => {
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-    modules: [Navigation],
+     modules: [Navigation],
   direction: 'horizontal',
-    slidesPerView: 1,
+  slidesPerView: 1,
     keyboard: {
         enabled: true
     },
-
+//  init: function() {
+//             updateSwiperWrapperHeight();
+//         },
+//         resize: function() {
+//             updateSwiperWrapperHeight();
+//   },
+        
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -83,3 +89,22 @@ function reviewsMarkup(arrReviews) {
             </li>`
     }).join("");
 }
+
+
+// function updateSwiperWrapperHeight() {
+//     var slides = document.querySelectorAll('.swiper-slide');
+//     var maxHeight = 0;
+    
+//     slides.forEach(function(slide) {
+//         var slideHeight = slide.clientHeight;
+//         if (slideHeight > maxHeight) {
+//             maxHeight = slideHeight;
+//         }
+//     });
+    
+//     // var swiperWrapper = document.querySelector('.swiper-wrapper');
+//     reviewsList.style.height = maxHeight + 'px';
+    
+//     // Обновляем Swiper после изменения высоты .swiper-wrapper
+//     swiper.update();
+// }
