@@ -43,6 +43,7 @@
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .title-text {
   display: flex;
