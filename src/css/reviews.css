@@ -58,7 +58,10 @@ body.dark-mode .swiper-slide {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 24px;
-  height: 100px;
+
+  @media screen and (min-width: 768px) {
+    height: 100px;
+  }
 }
 
 /* .review-text.dark-mode {
