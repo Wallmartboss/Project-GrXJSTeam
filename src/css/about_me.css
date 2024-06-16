@@ -41,7 +41,6 @@
 }
 
 .titel {
-  /* width: 55px; */
   height: 40px;
   font-family: var(--font-family);
   font-weight: 500;
@@ -60,11 +59,14 @@
 
   font-family: var(--font-family);
   font-size: 16px;
+  font-style: normal;
   font-weight: 300;
-  color: var(--black);
   line-height: 150%;
   letter-spacing: 0.03em;
+  color: var(--black);
+
 }
+
 body.dark-mode .titel,
 body.dark-mode .aboutH2,
 body.dark-mode .aboutMe_list {
@@ -133,6 +135,7 @@ body.dark-mode .aboutMe_list {
   .cartsInfo {
     gap: 32px;
   }
+  
   .about_Education {
     width: 336px;
   }
@@ -148,7 +151,7 @@ body.dark-mode .aboutMe_list {
     left: 51%;
     width: 336px;
     height: 252px;
-    background-image: url('../images/about_me/about-tab-decor-1x.png');
+    background-image: url('./images/about_me/about-tab-decor-1x.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,7 +160,7 @@ body.dark-mode .aboutMe_list {
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .aboutMe_background_image {
-      background-image: url('../images/about_me/about-tab-decor-2x.png');
+      background-image: url('./images/about_me/about-tab-decor-2x.png');
     }
   }
 }
@@ -175,13 +178,13 @@ body.dark-mode .aboutMe_list {
     height: 448px;
     margin-left: 240px;
     margin-top: 272px;
-    background-image: url('../images/about_me/about-desk-decor-1x.png');
+    background-image: url('./images/about_me/about-desk-decor-1x.png');
     background-size: cover;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .aboutImg {
-      background-image: url('../images/about_me/about-desk-decor-2x.png');
+      background-image: url('./images/about_me/about-desk-decor-2x.png');
     }
   }
 
@@ -198,7 +201,7 @@ body.dark-mode .aboutMe_list {
     height: 288px;
     top: 54%;
     left: 68%;
-    background-image: url('..//images/about_me/about-desk-decor-1x.png');
+    background-image: url('.//images/about_me/about-desk-decor-1x.png');
   }
 
   .ml240px {
