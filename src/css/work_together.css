@@ -45,11 +45,11 @@
 }
 .work-together-container {
   display: block;
-  margin: 0 20px;
+  /* margin: 0 20px; */
   align-items: center;
   flex-shrink: 0;
   @media screen and (min-width: 768px) {
-    margin: 0 32px;
+    /* margin: 0 32px; */
   }
 }
 

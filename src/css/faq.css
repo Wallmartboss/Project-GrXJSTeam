@@ -63,7 +63,10 @@ body.dark-mode .faq__btn {
 }
 
 .faq__icon {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-self: center;
   transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;

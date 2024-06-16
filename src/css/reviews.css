@@ -1,4 +1,4 @@
-.reviews {
+benefits-container.reviews {
   display: flex;
   justify-content: center;
   padding-top: 40px;
@@ -33,17 +33,19 @@
   letter-spacing: 0.03em;
   color: #292929;
 }
-.swiper {
+.swiper-wrapper {
   position: relative;
+  height: 100%;
 }
 
 .swiper-slide {
+  position: relative;
   border-radius: 16px;
   background: #e4e5e6;
   padding: 32px;
   width: 320px;
   /* height: 296px; */
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 
 body.dark-mode .swiper-slide {
@@ -57,7 +59,7 @@ body.dark-mode .swiper-slide {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 
   @media screen and (min-width: 768px) {
     height: 100px;
@@ -91,6 +93,7 @@ body.dark-mode .swiper-slide {
 } */
 
 .swiper-button-prev {
+  display: block;
   border: 1px solid rgba(41, 41, 41, 0.3);
   background-color: transparent;
   border-radius: 8px;
