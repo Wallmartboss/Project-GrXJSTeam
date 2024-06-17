@@ -1,7 +1,7 @@
 .work-together {
   padding-top: 40px;
   padding-bottom: 40px;
-  position: relative;
+
   z-index: 1;
 }
 
@@ -10,11 +10,11 @@
     padding-top: 62px;
     padding-bottom: 62px;
   }
-  .work-together::before {
+  .work-together-container::before {
     background-image: url(../images/work_together/wt-tab-decor-2x.png);
     content: '';
     position: absolute;
-    top: -42px;
+    top: -104px;
     right: 32px;
     width: 336px;
     height: 260px;
@@ -29,11 +29,11 @@
     padding-top: 82px;
     padding-bottom: 82px;
   }
-  .work-together::before {
+  .work-together-container::before {
     background-image: url(../images/work_together/wt-desk-decor-2x.png);
     content: '';
     position: absolute;
-    top: -62px;
+    top: -144px;
     right: 32px;
     width: 526px;
     height: 408px;
@@ -44,6 +44,7 @@
   }
 }
 .work-together-container {
+  position: relative;
   display: block;
   /* margin: 0 20px; */
   align-items: center;
