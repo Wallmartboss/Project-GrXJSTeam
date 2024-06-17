@@ -33,17 +33,21 @@
   letter-spacing: 0.03em;
   color: #292929;
 }
-.swiper {
-  position: relative;
+.swiper-wrapper {
+  /* position: relative; */
+  /* height: 100%; */
+  /* height: 320px; */
+  height: 100%;
+  margin-bottom: 24px;
 }
 
 .swiper-slide {
+  position: relative;
   border-radius: 16px;
   background: #e4e5e6;
   padding: 32px;
   width: 320px;
   /* height: 296px; */
-  margin-bottom: 64px;
 }
 
 body.dark-mode .swiper-slide {
@@ -90,7 +94,13 @@ body.dark-mode .swiper-slide {
   color: #f0f0f0;
 } */
 
+.nav-button {
+  display: flex;
+  gap: 16px;
+}
+
 .swiper-button-prev {
+  display: block;
   border: 1px solid rgba(41, 41, 41, 0.3);
   background-color: transparent;
   border-radius: 8px;
@@ -100,9 +110,10 @@ body.dark-mode .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  margin-left: auto;
+  /* position: absolute;
   bottom: 0;
-  right: 56px;
+  right: 56px; */
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,9 +150,9 @@ body.dark-mode .swiper-button-prev:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0; */
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

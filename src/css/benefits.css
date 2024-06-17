@@ -1,179 +1,184 @@
-
 .benefits {
-    padding: 40px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .benefits .container {
-    max-width: 320px;
+  max-width: 360px;
 }
 
 .benefits-title {
-    color: var(--color-text);
-    font-family: Impact;
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 1.23em;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  color: var(--color-text);
+  font-family: Impact;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.23em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .benefits-title-span {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
 
 .benefits-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .benefits-item {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  @media screen and (min-width: 360px) {
+    min-width: 320px;
+    max-width: 740px;
+  }
+}
 .benefits-icon-frame {
-    width: 48px;
-    height: 48px;
-    background-color: #00b0681a;
-    position: relative;
-    border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #00b0681a;
+  position: relative;
+  border-radius: 8px;
 }
 
 .benefits-icon {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    fill: none;
-    stroke: var(--accet-green);
-    flex-shrink: 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  fill: none;
+  stroke: var(--accet-green);
+  flex-shrink: 0;
 }
 
 .benefits-titles {
-    color: var(--color-text);
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.55em;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+  color: var(--color-text);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .benefits-text {
-    color: var(--color-text);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.5em;
-    letter-spacing: 0.03em;
+  color: var(--color-text);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
 }
 
 .benefits-image-desktop {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .benefits .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .benefits .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-    .benefits-title {
-        font-size: 108px;
-        line-height: 1.14em;
-        letter-spacing: 0.01em;
-        margin-bottom: 0;
-    }
+  .benefits-title {
+    font-size: 108px;
+    line-height: 1.14em;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+  }
 
-    .benefits-item:first-child {
-        margin-left: 368px;
-    }
+  .benefits-item:first-child {
+    margin-left: 368px;
+  }
 
-    .benefits-list {
-        width: 704px;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        gap: 32px;
-        flex-wrap: wrap;
-        margin-top: -20px;
-    }
+  .benefits-list {
+    width: 704px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: -20px;
+  }
 
-    .benefits-item {
-        width: 336px;
-    }
+  .benefits-item {
+    width: 336px;
+  }
 
-    .benefits-titles {
-        font-size: 20px;
-        line-height: 1.6em;
-    }
+  .benefits-titles {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
 
-    .benefits-text {
-        width: 336px;
-        color: var(--color-text);
-    }
+  .benefits-text {
+    width: 336px;
+    color: var(--color-text);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .benefits .container {
-        max-width: 1280px;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 112px;
-    }
+  .benefits .container {
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 112px;
+  }
 
-    .benefits-container {
-        position: relative;
-    }
+  .benefits-container {
+    position: relative;
+    /* margin: 0 auto; */
+  }
 
-    .benefits-image-desktop {
-        display: block;
-        width: 526px;
-        height: 408px;
-        z-index: -1;
-        position: absolute;
-        top: -20px;
-        right: 32px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+  .benefits-image-desktop {
+    display: block;
+    width: 526px;
+    height: 408px;
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    right: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-    .benefits-title {
-        width: 681px;
-        height: 372px;
-        margin-bottom: -40px;
-        margin-bottom: 0;
-    }
+  .benefits-title {
+    width: 681px;
+    height: 372px;
+    margin-bottom: -40px;
+    margin-bottom: 0;
+  }
 
-    .benefits-item:first-child {
-        margin-left: 832px;
-    }
+  .benefits-item:first-child {
+    margin-left: 832px;
+  }
 
-    .benefits-list {
-        width: 1216px;
-        height: 400px;
-        margin-top: -30px;
-    }
+  .benefits-list {
+    width: 1216px;
+    height: 400px;
+    margin-top: -30px;
+  }
 
-    .benefits-item {
-        width: 384px;
-    }
+  .benefits-item {
+    width: 384px;
+  }
 
-    .benefits-text {
-        width: 384px;
-        height: 72px;
-        color: var(--color-text);
-    }
+  .benefits-text {
+    width: 384px;
+    height: 72px;
+    color: var(--color-text);
+  }
 
-         @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-         background-image: url('../images/hero/benefits-desktop-2x.png');
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero/benefits-desktop-2x.png');
+  }
 }

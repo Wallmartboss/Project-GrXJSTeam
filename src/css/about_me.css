@@ -64,7 +64,6 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: var(--black);
-
 }
 
 body.dark-mode .titel,
@@ -135,7 +134,7 @@ body.dark-mode .aboutMe_list {
   .cartsInfo {
     gap: 32px;
   }
-  
+
   .about_Education {
     width: 336px;
   }
@@ -152,6 +151,7 @@ body.dark-mode .aboutMe_list {
     width: 336px;
     height: 252px;
     background-image: url('../images/about_me/about-tab-decor-1x.png');
+    background-image: url('header.css');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,7 +201,9 @@ body.dark-mode .aboutMe_list {
     height: 288px;
     top: 54%;
     left: 68%;
-    background-image: url('..//images/about_me/about-desk-decor-1x.png');
+
+    background-image: url('../images/about_me/about-desk-decor-1x.png');
+
   }
 
   .ml240px {

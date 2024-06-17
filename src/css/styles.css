@@ -20,7 +20,7 @@
   --font-family: 'Poppins', sans-serif;
   --second-family: 'Impact', sans-serif;
   --third-family: 'Montserrat', sans-serif;
-  --background-color: white;
+  --background-color: var(--white);
   --text-color: black;
 }
 
@@ -57,7 +57,7 @@ html {
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 100%;
 }
 
@@ -81,6 +81,7 @@ html {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    margin: 0 auto;
   }
 }
 
