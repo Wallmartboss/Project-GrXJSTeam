@@ -99,29 +99,27 @@
   transition: background-color 0.25s;
 }
 
-#toggle:checked + .btn-toggle {
+#toggle:checked+label.btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle:checked + .btn-toggle .handle {
-  top: 2px;
+#toggle:checked+label.btn-toggle .handle {
   left: 25px;
 }
 
-#toggle:checked + .btn-toggle .handle::before {
+#toggle:checked+label.btn-toggle .handle::before {
   background-color: #2a2d32;
 }
 
-#toggle-mobile:checked + .btn-toggle {
+#toggle-mob-menu:checked+label.btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle-mobile:checked + .btn-toggle .handle {
-  top: 1px;
+#toggle-mob-menu:checked+label.btn-toggle .handle {
   left: 25px;
 }
 
-#toggle-mobile:checked + .btn-toggle .handle::before {
+#toggle-mob-menu:checked+label.btn-toggle .handle::before {
   background-color: #2a2d32;
 }
 
