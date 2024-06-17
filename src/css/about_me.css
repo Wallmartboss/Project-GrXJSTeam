@@ -47,7 +47,7 @@
   font-size: 32px;
   line-height: 125%;
   letter-spacing: 0.01em;
-
+  text-transform: uppercase;
   color: var(--black);
   margin-bottom: 8px;
 }
@@ -104,9 +104,6 @@ body.dark-mode .aboutMe_list {
   flex-direction: column;
   gap: 12px;
 }
-/* .dark-mode {
-  color: var(--white);
-} */
 
 @media screen and (min-width: 768px) {
   #about_section {
