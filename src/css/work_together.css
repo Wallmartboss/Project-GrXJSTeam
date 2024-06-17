@@ -398,26 +398,31 @@ body.dark-mode .modal-close-btn {
 
 .modal-title {
   font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
   margin-bottom: 16px;
   color: #00b068;
   text-align: center;
+  text-transform: uppercase;
 }
-
+body.dark-mode .modal-title {
+  color: #14c57c;
+}
 .modal-text {
+  font-family: var(--font-family);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: #292929;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
   text-align: center;
+  width: 350px;
 }
 
-body.dark-mode .modal-text {
+/* body.dark-mode .modal-text {
   color: #f0f0f0;
-}
+} */
 
 input[type='email'] {
   text-transform: lowercase;
