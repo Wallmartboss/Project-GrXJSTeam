@@ -121,7 +121,7 @@ function loadProjects(event) {
 
         listItem.innerHTML = `
            <div class="img-container">
-            <img class="project-img" src="${project.image}" srcset="${project.image} 1x, ${project.imageRetina} 2x" alt="${project.title}">
+            <img class="project-img" src="${project.image}" srcset="${project.image} 1x, ${project.imageRetina} 2x" alt="${project.title}" loading="lazy" >
             </div>
             <p class="project-text">Tech Stack: ${project.techStack}</p>
             <div>
