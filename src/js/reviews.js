@@ -24,7 +24,7 @@ results.then((data) => {
 }).catch((error) => {
    const errorMarkup = `<li class="error-review">
    <p class="error-review-text">Not Found</p></li>`
-   return reviewsList.innerHTML = errowMarkup;
+   return reviewsList.innerHTML = errorMarkup;
 });
 
 const swiper = new Swiper('.swiper', {
@@ -35,12 +35,6 @@ const swiper = new Swiper('.swiper', {
     keyboard: {
         enabled: true
     },
-//  init: function() {
-//             updateSwiperWrapperHeight();
-//         },
-//         resize: function() {
-//             updateSwiperWrapperHeight();
-//   },
         
   // Navigation arrows
   navigation: {
@@ -90,21 +84,3 @@ function reviewsMarkup(arrReviews) {
     }).join("");
 }
 
-
-// function updateSwiperWrapperHeight() {
-//     var slides = document.querySelectorAll('.swiper-slide');
-//     var maxHeight = 0;
-    
-//     slides.forEach(function(slide) {
-//         var slideHeight = slide.clientHeight;
-//         if (slideHeight > maxHeight) {
-//             maxHeight = slideHeight;
-//         }
-//     });
-    
-//     // var swiperWrapper = document.querySelector('.swiper-wrapper');
-//     reviewsList.style.height = maxHeight + 'px';
-    
-//     // Обновляем Swiper после изменения высоты .swiper-wrapper
-//     swiper.update();
-// }
