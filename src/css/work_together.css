@@ -405,6 +405,7 @@ body.dark-mode .modal-close-btn {
   color: #00b068;
   text-align: center;
   text-transform: uppercase;
+  max-width: 358px;
 }
 body.dark-mode .modal-title {
   color: #14c57c;
@@ -417,7 +418,7 @@ body.dark-mode .modal-title {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-align: center;
-  width: 350px;
+  max-width: 358px;
 }
 
 /* body.dark-mode .modal-text {
