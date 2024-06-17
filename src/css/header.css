@@ -57,24 +57,21 @@
 
 .btn-toggle-checkbox {
   display: none;
-}
+} 
 
 .btn-toggle {
   position: relative;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
   width: 48px;
   height: 24px;
   border-radius: 16px;
   background: var(--light-grey);
   cursor: pointer;
   transition: background-color 0.25s;
+  overflow: hidden;
 }
 
 .btn-toggle .handle {
-  display: block;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -82,44 +79,45 @@
   height: 20px;
   border-radius: 50%;
   background: var(--accet-green);
-  transition: background-color 0.25s, left 0.25s;
-  overflow: hidden;
+  transition: left 0.25s;
 }
 
 .btn-toggle .handle::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   width: 100%;
   height: 100%;
-  background-color: var(--accet-green);
+  background-color: var(--light-grey);
   border-radius: 50%;
-  transform: translateX(-10px);
-  transition: background-color 0.25s;
+  transform: translateX(-20px);
+  transition: transform 0.25s;
 }
 
-#toggle:checked+label.btn-toggle {
+#toggle:checked+.btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle:checked+label.btn-toggle .handle {
-  left: 25px;
+#toggle:checked+.btn-toggle .handle {
+  left: 24px;
 }
 
-#toggle:checked+label.btn-toggle .handle::before {
+#toggle:checked+.btn-toggle .handle::before {
+  transform: translateX(0);
   background-color: #2a2d32;
 }
 
-#toggle-mob-menu:checked+label.btn-toggle {
+#toggle-mob-menu:checked+.btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle-mob-menu:checked+label.btn-toggle .handle {
-  left: 25px;
+#toggle-mob-menu:checked+.btn-toggle .handle {
+  left: 24px;
 }
 
-#toggle-mob-menu:checked+label.btn-toggle .handle::before {
+#toggle-mob-menu:checked+.btn-toggle .handle::before {
+  transform: translateX(0);
   background-color: #2a2d32;
 }
 
