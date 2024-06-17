@@ -24,6 +24,13 @@
     text-align: left;
   }
 }
+.logo:hover,
+.logo:hover {
+  animation: shake 0.92s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
 
 .accent {
   color: var(--accet-green);
@@ -57,7 +64,7 @@
 
 .btn-toggle-checkbox {
   display: none;
-} 
+}
 
 .btn-toggle {
   position: relative;
@@ -95,28 +102,28 @@
   transition: transform 0.25s;
 }
 
-#toggle:checked+.btn-toggle {
+#toggle:checked + .btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle:checked+.btn-toggle .handle {
+#toggle:checked + .btn-toggle .handle {
   left: 24px;
 }
 
-#toggle:checked+.btn-toggle .handle::before {
+#toggle:checked + .btn-toggle .handle::before {
   transform: translateX(0);
   background-color: #2a2d32;
 }
 
-#toggle-mob-menu:checked+.btn-toggle {
+#toggle-mob-menu:checked + .btn-toggle {
   background-color: #2a2d32;
 }
 
-#toggle-mob-menu:checked+.btn-toggle .handle {
+#toggle-mob-menu:checked + .btn-toggle .handle {
   left: 24px;
 }
 
-#toggle-mob-menu:checked+.btn-toggle .handle::before {
+#toggle-mob-menu:checked + .btn-toggle .handle::before {
   transform: translateX(0);
   background-color: #2a2d32;
 }
