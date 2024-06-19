@@ -14,6 +14,7 @@
   font-size: 52px;
   line-height: 123%;
   letter-spacing: 0.0346em;
+  text-transform: uppercase;
 }
 
 .aboutSpan {
@@ -47,7 +48,7 @@
   font-size: 32px;
   line-height: 125%;
   letter-spacing: 0.01em;
-
+  text-transform: uppercase;
   color: var(--black);
   margin-bottom: 8px;
 }
@@ -104,9 +105,6 @@ body.dark-mode .aboutMe_list {
   flex-direction: column;
   gap: 12px;
 }
-/* .dark-mode {
-  color: var(--white);
-} */
 
 @media screen and (min-width: 768px) {
   #about_section {
@@ -124,7 +122,7 @@ body.dark-mode .aboutMe_list {
     width: 336px;
     height: 392px;
     margin-left: 0px;
-    margin-top: 408px;
+    margin-top: 360px;
     /* position: absolute; */
   }
   .about_Bio {

@@ -64,14 +64,15 @@ html {
 /* Для мобільного екрану від 360 px  */
 @media screen and (min-width: 360px) {
   .container {
-    width: 100%;
+    width: 360px; /*100%;*/
+    margin: 0 auto;
   }
 }
 
 /* Для планшетного екрану від 768 px  */
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px; /* 100%;*/
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -81,7 +82,6 @@ html {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    margin: 0 auto;
   }
 }
 
@@ -91,8 +91,8 @@ html {
   width: 56px;
   height: 56px;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 75px;
+  right: 20px;
   z-index: 99;
   border: solid 1px var(--light-grey);
   outline: none;
@@ -100,6 +100,12 @@ html {
   cursor: pointer;
   padding: 14px;
   border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    border: solid 1px var(--accet-green);
+    background-color: var(--light-grey);
+  }
 }
 
 #scrollToTopBtn .hero-icon-arrow {
